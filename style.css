@@ -1,0 +1,115 @@
+/* Cache la piste de la scrollbar (le fond) */
+.page::-webkit-scrollbar {
+  width: 15px; /* Ajustez la largeur selon vos besoins */
+  border: 1px solid transparent;
+  background-color: transparent;
+}
+
+body {
+  background-image: url("bg.jpg");
+  height: 100vh;
+  max-height: 100vh;
+}
+
+.page::-webkit-scrollbar-track {
+  background: transparent;
+  border: none;
+}
+
+.page::-webkit-scrollbar-corner {
+  background: transparent;
+  border: none;
+}
+
+/* Personnalise le bloc de défilement (thumb) */
+.page::-webkit-scrollbar-thumb {
+  background-color: #737576; /* Couleur du bloc de défilement */
+  border: none; /* Assure qu'il n'y ait pas de contour */
+  border-radius: 20px;
+}
+
+.drop .dropdown-menu {
+  display: none;
+  background-color: whitesmoke;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+.dropdown-item {
+  color: black;
+}
+
+.page h1 {
+  font-family: monospace;
+  font-style: normal;
+  text-transform: capitalize;
+  letter-spacing: 0px;
+  padding-top: 3%;
+}
+.page div {
+  transition: 0.2s ease-in;
+  font-size: larger;
+  border-top: 50px solid transparent;
+  border-top-left-radius: 50px;
+}
+
+.page div:hover {
+ transform: translate(1%);
+border-left: 2px solid black;
+padding-left : 2% ;
+font-weight: 900;
+color: black;
+}
+
+.dropdown-item:hover {
+  background-color: transparent;
+  color: black;
+  font-weight: bolder;
+  transform: scale(105%);
+}
+
+.dropdown-item svg {
+  max-height: 2rem;
+  padding: 1%;
+}
+
+.drop:hover .dropdown-menu {
+  display: block;
+  width: 250px;
+}
+
+.navbar {
+  width: 100%;
+  z-index: 10;
+  padding-left: 10%;
+  filter: opacity(98%);
+  border-bottom: 5px solid rgba(221, 225, 230, 0.9);
+  border-top: 5px solid rgba(221, 225, 230, 0.9);
+}
+
+.page {
+  position: relative;
+  z-index: 0;
+  margin: 0% 5% 0% 5%;
+  padding-right: 1%;
+  padding-top: 5%;
+  overflow: scroll;
+  background-color: rgba(221, 225, 230, 0.9);
+  padding-left: 1%;
+  height: 85%;
+}
+.page img {
+  width: 100%;
+  filter: blur(5px);
+}
+
+
+.nav-link {
+  transition:  0.3s ease;
+}
+
+.nav-link.active {
+  color: #ffffff; /* couleur du texte */
+  transform: translateY(-4px);
+  border-bottom: 2px solid #fcfeff; /* bordure pour mettre en évidence */
+}
+
