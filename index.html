@@ -11,31 +11,32 @@
 </head>
 
 <body>
+    <div class="bg"></div>
     <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="">Portfolio</a>
+        <div class="container-fluid fade-in">
+            <a class="navbar-brand fade-in" href="">Portfolio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
                 aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarColor02">
                 <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
+                    <li class="nav-item fade-in">
                         <a class="nav-link" href="#moi">Qui suis-je ?</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item fade-in">
                         <a class="nav-link" href="#parcours">Mon parcours</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item fade-in">
                         <a class="nav-link" href="#projets">Mes projets</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item fade-in">
                         <a class="nav-link" href="#passions">Mes passions</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item fade-in">
                         <a class="nav-link" href="#contact">Me contacter</a>
                     </li>
-                    <li class="nav-item drop">
+                    <li class="nav-item drop fade-in">
                         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true"
                             aria-expanded="false">Réseaux professionnel</a>
                         <div class="dropdown-menu">
@@ -57,83 +58,125 @@
                 </ul>
             </div>
         </div>
-    </nav>
-    <div class="page"><br><br><br><br><br><br>
-        <span id="spawn">
-            <h1>
-                Bienvenue sur le portfolio de 
-                <strong> Alexis Christaud-Braize</strong>
-            </h1>
+    </nav> <br id="spawn">
+    <br><br><br><br><br><br><br><br><br>
 
-        </span>
+    <div class="sex">
+    <div>
+        Bienvenue sur le portfolio de
+        <strong> Alexis Christaud-Braize</strong>
+    </div>
+</div>
 
-
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <div id="moi">
-             Qui suis-je ? 
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br class="balise" id="moi">
+    <br>
+    <hr class="fade-in">
 
 
-<br>
+    <br>
+    <div class="page fade-in">
+
+        <div>
+            Qui suis-je ?
+
+            <br><br><br>
+            coucou<br><br><br><br><br><br><br><br><br><br>
+
+
+            <br>
         </div>
-        <br><br>
-        <div id="parcours"> Mon parcours 
+    </div>
 
-            <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <hr id="parcours" class="fade-in">
+
+    <div class="page fade-in">
+        <div> Mon parcours
+
+
+
+
+
+            <br><br><br><br>
+
+            <img src="bg.jpg" style="height: 90px; width: 160px;" alt="">
+
+
+            <br><br><br><br><br><br><br><br><br>
 
         </div>
 
-<br><br>
+    </div>
+    <br class="balise" id="projets">
+    <br>
+    <hr class="fade-in">
 
+    <br>
+    <div class="page fade-in">
 
-
-        <div id="projets"> Mes projets 
+        <div> Mes projets
             <br><br><br><br><br><br><br><br><br><br><br><br>
 
         </div>
 
+    </div>
 
- <br><br>
+    <br class="balise" id="passions"> <br>
+    <hr class="fade-in">
 
 
-        <div id="passions"> Mes passions 
+
+
+    <br>
+
+    <div class="page fade-in">
+        <div> Mes passions
             <br><br><br><br><br><br><br><br><br><br><br><br>
-
         </div>
+    </div>
 
+    <br class="balise" id="contact"> <br>
+    <hr class="fade-in">
+    <br>
 
-<br><br>
-
-
-        <div id="contact"> Me contacter
-
-
+    <div class="page fade-in">
+        <div> Me contacter
             <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             <br><br><br><br><br><br>
         </div>
-
-
-
-
     </div>
 
 
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const navLinks = document.querySelectorAll(".nav-link");
-        
-            navLinks.forEach(link => {
-                link.addEventListener("click", function() {
-                    // Supprime la classe `active` de tous les liens
-                    navLinks.forEach(link => link.classList.remove("active"));
-                    // Ajoute la classe `active` au lien cliqué
-                    this.classList.add("active");
+        document.addEventListener("DOMContentLoaded", function () {
+            // Sélectionne les éléments avec les classes .fade-in et .fade-in-side
+            const elements = document.querySelectorAll(".fade-in, .fade-in-side");
+
+            if (elements.length === 0) {
+                console.warn("Aucun élément avec les classes .fade-in ou .fade-in-side n'a été trouvé !");
+                return;
+            }
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        console.log("Element visible : ", entry.target);
+                        entry.target.classList.add("show");
+                        observer.unobserve(entry.target); // Stop observing once animation is triggered
+                    }
                 });
+            }, {
+                threshold: 0.1
             });
+
+            // Observes each .fade-in and .fade-in-side element
+            elements.forEach(element => observer.observe(element));
         });
-        </script>
-        
+
+
+
+    </script>
+
 
 </body>
 
