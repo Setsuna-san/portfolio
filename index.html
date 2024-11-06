@@ -7,6 +7,10 @@
     <title>Portfolio</title>
     <link href="bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="slideshow.css">
+
 
 </head>
 
@@ -82,12 +86,19 @@
 
             <br><br>
             <div class="slideshow-container" data-slideshow="1">
+                <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
                 <div class="slides">Bienvenue</div>
                 <div class="slides">Portfolio</div>
                 <div class="slides">Contact</div>
+                <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                <div class="dots-container" id="dots-1">
+                    <span class="dot" onclick="currentSlide(1, 1)"></span>
+                    <span class="dot" onclick="currentSlide(2, 1)"></span>
+                    <span class="dot" onclick="currentSlide(3, 1)"></span>
+                </div>
             </div>
-            <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+
+
 
 
 
@@ -106,22 +117,23 @@
     <div class="page fade-in">
         <div class="espace_page">
             <span class="titre">Mon parcours</span>
-
-
-
-
-
-            <br><br><br><br>
-
-            <img src="bg.jpg" style="height: 90px; width: 160px;" alt="">
+            <br><br>
+            <br>
 
             <div class="slideshow-container" data-slideshow="2">
+                <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
                 <div class="slides">Bienvenue</div>
                 <div class="slides">Portfolio</div>
                 <div class="slides">Contact</div>
+                <a class="next" onclick="plusSlides(1, 2 )">&#10095;</a>
+                <div class="dots-container" id="dots-2">
+                    <span class="dot" onclick="currentSlide(1, 2)"></span>
+                    <span class="dot" onclick="currentSlide(2, 2)"></span>
+                    <span class="dot" onclick="currentSlide(3, 2)"></span>
+                </div>
             </div>
-            <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1, 2 )">&#10095;</a>
+
+
 
             <br><br><br><br><br><br><br><br><br>
 
@@ -179,7 +191,95 @@
         </div>
     </div>
 
+    <style>
+        .slideshow-container {
+            position: relative;
+            width: 600px;
+            height: 200px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border: 1px solid #343a3444;
+            border-radius: 8px;
+            transition: 0.3s ease;
+        }
 
+        .slideshow-container:hover {
+            box-shadow: 8px 8px rgba(0, 0, 0, 0.359);
+            border: 2px solid #343a34;
+        }
+
+        .slideshow-container:hover .prev {
+            transform: scale(130%);
+        }
+
+        .slideshow-container:hover .next {
+            transform: scale(130%);
+        }
+
+        .slides {
+            display: none;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            align-content: center;
+        }
+
+        .prev,
+        .next {
+            cursor: pointer;
+            -webkit-user-select: none;
+            user-select: none;
+            text-decoration: none;
+            width: 9%;
+            height: 100%;
+            text-align: center;
+            align-content: center;
+            transition: 0.3s ease;
+        }
+
+        .prev:hover {
+            text-shadow: 8px 0px rgb(198, 37, 12);
+        }
+
+        .next:hover {
+            text-shadow: -8px 0px red;
+        }
+
+        .prev:hover,
+        .next:hover {
+            cursor: pointer;
+            height: 100%;
+        }
+
+
+        .slide.active {
+            display: block;
+        }
+
+        .dots-container {
+            text-align: center;
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+        }
+
+        .dot {
+            height: 10px;
+            width: 10px;
+            margin: 0 4px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .dot.active {
+            background-color: #717171;
+        }
+    </style>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             // Sélectionne les éléments avec les classes .fade-in et .fade-in-side
@@ -206,14 +306,14 @@
             elements.forEach(element => observer.observe(element));
         });
 
-        // Création d'un objet pour suivre l'index de chaque diaporama
         const slideIndices = {};
 
         // Initialisation des diaporamas
         document.querySelectorAll(".slideshow-container").forEach((container, index) => {
             const slideshowID = container.getAttribute("data-slideshow");
-            slideIndices[slideshowID] = 1;  // Initialisation de chaque diaporama à la première slide
-            showSlides(slideIndices[slideshowID], slideshowID);  // Affiche la première slide de chaque diaporama
+            slideIndices[slideshowID] = 1;  
+
+            showSlides(slideIndices[slideshowID], slideshowID); 
         });
 
         // Fonction pour afficher les slides
@@ -225,13 +325,26 @@
             for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
             }
-            slides[slideIndices[slideshowID] - 1].style.display = "block";
-        }
 
-        // Fonction pour changer de slide
+            updateDots(slideIndices[slideshowID], slideshowID);
+            slides[slideIndices[slideshowID] - 1].style.display = "block";
+
+        }
         function plusSlides(n, slideshowID) {
             showSlides(slideIndices[slideshowID] += n, slideshowID);
         }
+
+        function currentSlide(n, slideshowID) {
+            showSlides(slideIndices[slideshowID] = n, slideshowID);
+        }
+
+        function updateDots(n, slideshowID) {
+            const dots = document.querySelectorAll(`#dots-${slideshowID} .dot`);
+            dots.forEach(dot => dot.classList.remove("active"));
+            dots[slideIndices[slideshowID] - 1].classList.add("active");
+        }
+
+
 
     </script>
 
