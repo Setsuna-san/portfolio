@@ -38,6 +38,10 @@ hr {
   transition: 0.4s ease-in;
 }
 
+.espace_page strong {
+  font-size: xx-large;
+}
+
 .page::before {
   content: "";
   position: absolute;
@@ -73,8 +77,12 @@ hr {
   transform: translate(1%);
   padding-left: 2%;
   opacity: 1;
+}
+
+.page:hover .titre {
   font-weight: 900;
 }
+
 
 .page::-webkit-scrollbar {
   width: 15px;
@@ -116,6 +124,19 @@ hr {
 .titre {
   font-size: 2.5rem;
 }
+
+.espace_page .link {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  transition: 0.4s ease;
+}
+
+.espace_page .link:hover {
+  color: rgb(224, 12, 12);
+  text-decoration: underline;
+  transform: scale(104%);
+}
+
 
 
 .hidden-text {
