@@ -14,7 +14,7 @@
 (function() {
   var WIDTH, HEIGHT, canvas, con, g;
   var pxs = [];
-  var rint = 50;
+  var rint = 100;
 
   $.fn.sprites = function () {
     this.append($('<canvas id="sprites"></canvas>'));

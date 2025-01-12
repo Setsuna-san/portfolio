@@ -4,6 +4,7 @@ iframe {
   left: 0;
   width: 100%;
   height: 100%;
+
   border: none;
   z-index: -1; /* Place l'iframe derrière le contenu principal */
 }
@@ -14,10 +15,11 @@ hr {
   height: 20px;
   background: rgb(15, 207, 34);
   background: linear-gradient(
-    270deg,
-    rgba(15, 207, 34, 1) 10%,
-    rgba(255, 220, 220, 1) 50%,
-    rgba(7, 182, 224, 1) 90%
+    295deg,
+    rgb(175, 116, 116) 0%,
+    rgba(155, 133, 133) 50%,
+   
+    rgba(16, 33, 50) 100%
   );
   opacity: 1;
   border: none;
@@ -26,6 +28,7 @@ hr {
 
 .page {
   position: relative;
+  
   z-index: 0;
   width: 100%;
   padding-left: 1%;
@@ -33,12 +36,12 @@ hr {
   padding-top: 3%;
   padding-bottom: 3%;
   opacity: 0;
-  background: rgb(207, 207, 207);
+  background:     #343A40  ;
   background: linear-gradient(
     295deg,
-    rgba(207, 207, 207, 0.9) 0%,
-    rgba(255, 220, 220, 0.9) 50%,
-    rgba(166, 199, 207, 0.9) 100%
+    rgba(207, 207, 207, 0.1) 0%,
+    rgba(255, 220, 220, 0.1) 50%,
+    rgba(166, 199, 207, 0.1) 100%
   );
   transition: 0.4s ease-in;
 }
@@ -50,15 +53,18 @@ hr {
 .page::before {
   content: "";
   position: absolute;
+  border: 5px rgba(245, 245, 245, 0.632) solid;
+  border-left: 0px;
+  border-right: 0px;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background: linear-gradient(
     295deg,
-    rgba(207, 207, 207, 0.9) 0%,
-    rgba(255, 220, 220, 0.9) 50%,
-    rgba(166, 199, 207, 0.9) 100%
+    rgba(155, 133, 133, 0.7) 0%,
+    rgba(80, 70, 70, 0.7) 50%,
+    rgba(16, 33, 50, 0.7) 100%
   );
   opacity: 0;
   transition: opacity 0.4s ease;
@@ -73,14 +79,16 @@ hr {
   transition: 0.2s ease-in;
   font-size: larger;
   padding-left: 1%;
-  border-left: 2px solid rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  border-left: 2px solid whitesmoke;
+  color: whitesmoke;
   opacity: 0.7;
 }
 
 .page:hover .espace_page {
   transform: translate(1%);
   padding-left: 2%;
+  color: whitesmoke;
+  transition: ease 0.5s;
   opacity: 1;
 }
 
