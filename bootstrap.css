@@ -4029,7 +4029,8 @@ textarea.form-control-lg {
   }
   .navbar-expand-sm .offcanvas {
     position: static;
-    z-index: auto;
+    z-index: 5;
+
     flex-grow: 1;
     width: auto !important;
     height: auto !important;
@@ -4076,7 +4077,8 @@ textarea.form-control-lg {
   }
   .navbar-expand-md .offcanvas {
     position: static;
-    z-index: auto;
+    z-index: 5;
+
     flex-grow: 1;
     width: auto !important;
     height: auto !important;
@@ -4123,7 +4125,8 @@ textarea.form-control-lg {
   }
   .navbar-expand-lg .offcanvas {
     position: static;
-    z-index: auto;
+    z-index: 5;
+
     flex-grow: 1;
     width: auto !important;
     height: auto !important;
@@ -4170,7 +4173,8 @@ textarea.form-control-lg {
   }
   .navbar-expand-xl .offcanvas {
     position: static;
-    z-index: auto;
+    z-index: 5;
+
     flex-grow: 1;
     width: auto !important;
     height: auto !important;
@@ -4217,7 +4221,8 @@ textarea.form-control-lg {
   }
   .navbar-expand-xxl .offcanvas {
     position: static;
-    z-index: auto;
+    z-index: 5;
+
     flex-grow: 1;
     width: auto !important;
     height: auto !important;

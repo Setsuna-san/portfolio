@@ -3900,7 +3900,8 @@ fieldset:disabled .btn {
   }
   .navbar-expand-sm .offcanvas {
     position: static;
-    z-index: auto;
+    z-index: 5;
+
     flex-grow: 1;
     width: auto !important;
     height: auto !important;
@@ -3947,7 +3948,8 @@ fieldset:disabled .btn {
   }
   .navbar-expand-md .offcanvas {
     position: static;
-    z-index: auto;
+    z-index: 5;
+
     flex-grow: 1;
     width: auto !important;
     height: auto !important;
@@ -3994,7 +3996,8 @@ fieldset:disabled .btn {
   }
   .navbar-expand-lg .offcanvas {
     position: static;
-    z-index: auto;
+    z-index: 5;
+
     flex-grow: 1;
     width: auto !important;
     height: auto !important;
@@ -4041,7 +4044,8 @@ fieldset:disabled .btn {
   }
   .navbar-expand-xl .offcanvas {
     position: static;
-    z-index: auto;
+    z-index: 5;
+
     flex-grow: 1;
     width: auto !important;
     height: auto !important;
@@ -4088,7 +4092,8 @@ fieldset:disabled .btn {
   }
   .navbar-expand-xxl .offcanvas {
     position: static;
-    z-index: auto;
+    z-index: 5;
+
     flex-grow: 1;
     width: auto !important;
     height: auto !important;

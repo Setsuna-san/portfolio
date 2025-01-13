@@ -53,9 +53,6 @@ hr {
 .page::before {
   content: "";
   position: absolute;
-  border: 5px rgba(245, 245, 245, 0.632) solid;
-  border-left: 0px;
-  border-right: 0px;
   top: 0;
   left: 0;
   right: 0;
@@ -124,7 +121,6 @@ hr {
   position: relative;
   font-weight: bolder;
   text-shadow: -4px 4px rgb(0, 0, 0);
-  display: block;
   padding: 1%;
   color: rgb(255, 255, 255);
   border: 5px solid rgba(221, 225, 230, 0.9);
