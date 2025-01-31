@@ -1,0 +1,61 @@
+.carte {
+  width: 40vw;
+  border-radius: 3px;
+  background: rgb(212,139,171);
+  background: linear-gradient(145deg, rgba(212,139,171,1) 0%, rgba(187,219,214,1) 50%, rgba(47,125,170,1) 100%);  opacity: 0.5;
+  cursor: pointer;
+  transition: 0.6s ease;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+  gap: 16px;
+}
+
+.carte .photo {
+  margin-right: 5%;
+  height: 90px;
+  width: 160px;
+  margin-bottom: 2%;
+  object-fit: contain;
+}
+
+.carte .contenu {
+  display: flex;
+  flex-direction: row; /* Dispose l'image et le corps sur la même ligne */
+  align-items: flex-start; /* Aligne l'image et le texte en haut */
+}
+
+.carte .titre {
+  text-transform: uppercase;
+  padding: 2%;
+  border-radius: 15px;
+  font-size: 30px;
+  transition: 0.2s ease;
+}
+
+.carte .corp {
+  border-radius: 15px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.carte:hover {
+  opacity: 1;
+  transform: scale(104%);
+  background-color: rgba(255, 255, 255, 0.28);
+}
+
+.carte::before {
+  transition: 0.4s ease;
+}
+
+.corp:hover {
+  color: rgb(99, 218, 216);
+}
+.carte:hover .titre {
+  font-weight: 800;
+}

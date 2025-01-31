@@ -1,13 +1,336 @@
-<!doctype html>
-<html lang="en" data-critters-container>
+<!DOCTYPE html>
+<html lang="fr">
+
 <head>
-  <meta charset="utf-8">
-  <title>Portfolio</title>
-  <base href="/portfolio/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-<style>@import"https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700&display=swap";body{background-image:url(bg4.483f8bc2dced869d.png);background-repeat:no-repeat;background-size:cover;background-attachment:fixed;background-position:center}@charset "UTF-8";:root{--bs-blue:#007bff;--bs-indigo:#6610f2;--bs-purple:#6f42c1;--bs-pink:#e83e8c;--bs-red:#d9534f;--bs-orange:#fd7e14;--bs-yellow:#f0ad4e;--bs-green:#4bbf73;--bs-teal:#20c997;--bs-cyan:#1f9bcf;--bs-black:#000;--bs-white:#fff;--bs-gray:#919aa1;--bs-gray-dark:#343a40;--bs-gray-100:#f8f9fa;--bs-gray-200:#f7f7f9;--bs-gray-300:#eceeef;--bs-gray-400:#ced4da;--bs-gray-500:#adb5bd;--bs-gray-600:#919aa1;--bs-gray-700:#55595c;--bs-gray-800:#343a40;--bs-gray-900:#1a1a1a;--bs-primary:#1a1a1a;--bs-secondary:#fff;--bs-success:#4bbf73;--bs-info:#1f9bcf;--bs-warning:#f0ad4e;--bs-danger:#d9534f;--bs-light:#fff;--bs-dark:#343a40;--bs-primary-rgb:26,26,26;--bs-secondary-rgb:255,255,255;--bs-success-rgb:75,191,115;--bs-info-rgb:31,155,207;--bs-warning-rgb:240,173,78;--bs-danger-rgb:217,83,79;--bs-light-rgb:255,255,255;--bs-dark-rgb:52,58,64;--bs-primary-text-emphasis:#0a0a0a;--bs-secondary-text-emphasis:#666666;--bs-success-text-emphasis:#1e4c2e;--bs-info-text-emphasis:#0c3e53;--bs-warning-text-emphasis:#60451f;--bs-danger-text-emphasis:#572120;--bs-light-text-emphasis:#55595c;--bs-dark-text-emphasis:#55595c;--bs-primary-bg-subtle:#d1d1d1;--bs-secondary-bg-subtle:white;--bs-success-bg-subtle:#dbf2e3;--bs-info-bg-subtle:#d2ebf5;--bs-warning-bg-subtle:#fcefdc;--bs-danger-bg-subtle:#f7dddc;--bs-light-bg-subtle:#fcfcfd;--bs-dark-bg-subtle:#ced4da;--bs-primary-border-subtle:#a3a3a3;--bs-secondary-border-subtle:white;--bs-success-border-subtle:#b7e5c7;--bs-info-border-subtle:#a5d7ec;--bs-warning-border-subtle:#f9deb8;--bs-danger-border-subtle:#f0bab9;--bs-light-border-subtle:#f7f7f9;--bs-dark-border-subtle:#adb5bd;--bs-white-rgb:255,255,255;--bs-black-rgb:0,0,0;--bs-font-sans-serif:"Nunito Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;--bs-gradient:linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0));--bs-body-font-family:var(--bs-font-sans-serif);--bs-body-font-size:1rem;--bs-body-font-weight:300;--bs-body-line-height:1.5;--bs-body-color:#55595c;--bs-body-color-rgb:85,89,92;--bs-body-bg:#fff;--bs-body-bg-rgb:255,255,255;--bs-emphasis-color:#000;--bs-emphasis-color-rgb:0,0,0;--bs-secondary-color:rgba(85, 89, 92, .75);--bs-secondary-color-rgb:85,89,92;--bs-secondary-bg:#f7f7f9;--bs-secondary-bg-rgb:247,247,249;--bs-tertiary-color:rgba(85, 89, 92, .5);--bs-tertiary-color-rgb:85,89,92;--bs-tertiary-bg:#f8f9fa;--bs-tertiary-bg-rgb:248,249,250;--bs-heading-color:#1a1a1a;--bs-link-color:#1a1a1a;--bs-link-color-rgb:26,26,26;--bs-link-decoration:underline;--bs-link-hover-color:#151515;--bs-link-hover-color-rgb:21,21,21;--bs-code-color:#e83e8c;--bs-highlight-color:#55595c;--bs-highlight-bg:#fcefdc;--bs-border-width:1px;--bs-border-style:solid;--bs-border-color:#eceeef;--bs-border-color-translucent:rgba(0, 0, 0, .175);--bs-border-radius:.375rem;--bs-border-radius-sm:.25rem;--bs-border-radius-lg:.5rem;--bs-border-radius-xl:1rem;--bs-border-radius-xxl:2rem;--bs-border-radius-2xl:var(--bs-border-radius-xxl);--bs-border-radius-pill:50rem;--bs-box-shadow:0 .5rem 1rem rgba(0, 0, 0, .15);--bs-box-shadow-sm:0 .125rem .25rem rgba(0, 0, 0, .075);--bs-box-shadow-lg:0 1rem 3rem rgba(0, 0, 0, .175);--bs-box-shadow-inset:inset 0 1px 2px rgba(0, 0, 0, .075);--bs-focus-ring-width:.25rem;--bs-focus-ring-opacity:.25;--bs-focus-ring-color:rgba(26, 26, 26, .25);--bs-form-valid-color:#4bbf73;--bs-form-valid-border-color:#4bbf73;--bs-form-invalid-color:#d9534f;--bs-form-invalid-border-color:#d9534f}*,:after,:before{box-sizing:border-box}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:var(--bs-body-font-family);font-size:var(--bs-body-font-size);font-weight:var(--bs-body-font-weight);line-height:var(--bs-body-line-height);color:var(--bs-body-color);text-align:var(--bs-body-text-align);background-color:var(--bs-body-bg);-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}:root{--bs-breakpoint-xs:0;--bs-breakpoint-sm:576px;--bs-breakpoint-md:768px;--bs-breakpoint-lg:992px;--bs-breakpoint-xl:1200px;--bs-breakpoint-xxl:1400px}body{letter-spacing:1px}</style><link rel="stylesheet" href="styles.7916c95ee2f0b1dd.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.7916c95ee2f0b1dd.css"></noscript></head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link href="bootstrap.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="slideshow.css">
+
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="carte.css">
+
+
+</head>
+
 <body>
-  <app-root></app-root>
-<script src="runtime.1614cd08783e54c0.js" type="module"></script><script src="polyfills.de850715d3388772.js" type="module"></script><script src="scripts.1ac6d0d02f230370.js" defer></script><script src="main.48824c25224ae174.js" type="module"></script></body>
+
+    <nav class="navbar navbar-expand-lg bg-dark " data-bs-theme="dark">
+        <div class="container-fluid ">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
+                aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor02">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link " href="#moi">Qui suis-je ?</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#parcours">Mon parcours</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#projets">Mes projets</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#passions">Mes passions</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#contact">Me contacter</a>
+                    </li>
+                    <li class="nav-item drop ">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true"
+                            aria-expanded="false">Réseaux professionnel</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" rel="noopener noreferrer" target="_blank"
+                                href="https://github.com/Setsuna-san"><svg xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 496 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path
+                                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                                </svg> Github</a>
+                            <a class="dropdown-item" rel="noopener noreferrer" target="_blank"
+                                href="https://www.linkedin.com/in/alexis-christaud-braize-4a7a0827b/">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                    <path fill="#26577d"
+                                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                                </svg> Linkedin</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <iframe class="headerFrame" src="background.html"></iframe>
+<!-- <div class="background"></div> -->
+
+
+  
+
+    <br id="spawn">
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div class="spawn">
+        <div>
+            Bienvenue sur le portfolio de
+            <strong> Alexis Christaud-Braize</strong>
+        </div>
+    </div>
+
+    <br id="moi">
+    <br>
+    <!--      <hr class="fade-in">   -->
+
+
+    <br>
+    <!-- qui -->
+    <div class="page fade-in">
+
+        <div class="espace_page">
+            <span class="titre">A propos de moi</span>
+
+            <br><br><br><br>
+            Je m'appelle <strong>Alexis</strong>, j'ai <strong>20 ans </strong> et je suis <strong> étudiant en
+                informatique. &nbsp; : )</strong>
+            <br><br>
+            Je suis née à <strong> Toulouse</strong> et je vis actuellement à <strong> Blagnac.</strong>
+            <br><br>
+            <br><br><br><br><br><br>
+            <br><br>
+            <div class="slideshow-container" data-slideshow="1">
+                <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                <div class="slides">Bienvenue</div>
+                <div class="slides">Portfolio</div>
+                <div class="slides">Contact</div>
+                <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                <div class="dots-container" id="dots-1">
+                    <span class="dot" onclick="currentSlide(1, 1)"></span>
+                    <span class="dot" onclick="currentSlide(2, 1)"></span>
+                    <span class="dot" onclick="currentSlide(3, 1)"></span>
+                </div>
+            </div>
+
+
+
+
+
+
+            <br>
+        </div>
+        <br id="parcours" class="fade-in">
+    </div>
+
+    <br>
+
+
+    <!-- mon parcours -->
+    <div class="page fade-in">
+        <div class="espace_page">
+            <span class="titre">Mon parcours</span>
+            <br><br>
+            <br>
+
+            <div class="slideshow-container" data-slideshow="2">
+                <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+                <div class="slides">Bienvenue</div>
+                <div class="slides">Portfolio</div>
+                <div class="slides">Contact</div>
+                <a class="next" onclick="plusSlides(1, 2 )">&#10095;</a>
+                <div class="dots-container" id="dots-2">
+                    <span class="dot" onclick="currentSlide(1, 2)"></span>
+                    <span class="dot" onclick="currentSlide(2, 2)"></span>
+                    <span class="dot" onclick="currentSlide(3, 2)"></span>
+                </div>
+            </div>
+
+
+
+            <br><br>
+
+
+            <div class="grid">
+                <div class="carte" onclick="">
+                    <div class="titre">Bonjour</div>
+                    <div class="contenu">
+                        <img src="reserve/jeux.png" alt="Photo" class="photo">
+                        <div class="corp">Définition de bonjour</div>
+                    </div>
+                </div>
+                <div class="carte" onclick="">
+                    <div class="titre">Bonsoir</div>
+                    <div class="contenu">
+                        <img src="reserve/jeux.png" alt="Photo" class="photo">
+                        <div class="corp">Définition de bonsoir</div>
+                    </div>
+                </div>
+                <div class="carte" onclick="">
+                    <div class="titre">Salut</div>
+                    <div class="contenu">
+                        <img src="reserve/jeux.png" alt="Photo" class="photo">
+                        <div class="corp">Définition de salut</div>
+                    </div>
+                </div>
+                <div class="carte" onclick="">
+                    <div class="titre">Salut</div>
+                    <div class="contenu">
+                        <img src="reserve/jeux.png" alt="Photo" class="photo">
+                        <div class="corp">Définition de salut</div>
+                    </div>
+                </div>
+                <div class="carte" onclick="">
+                    <div class="titre">Salut</div>
+                    <div class="contenu">
+                        <img src="reserve/jeux.png" alt="Photo" class="photo">
+                        <div class="corp">Définition de salut</div>
+                    </div>
+                </div>
+                
+            </div>
+            
+
+
+
+            <br><br><br><br><br><br><br>
+
+        </div>
+        <br id="projets">
+    </div>
+    <br>
+
+    <!-- mes projets -->
+    <div class="page fade-in">
+
+        <div class="espace_page">
+
+            <span class="titre">Mes projets</span>
+            <br><br><br><br><br>
+
+            <br><br><br><br><br><br><br>
+
+        </div>
+        <br id="passions">
+    </div>
+    <br>
+
+    <!-- mes passions -->
+    <div class="page fade-in">
+        <div class="espace_page"> <span class="titre"> Mes passions</span>
+            <br><br><br><br>
+
+            <iframe src="https://store.steampowered.com/widget/271590/" frameborder="0" width="646"
+                height="190"></iframe><br><br><br><br><br><br><br><br>
+        </div>
+        <br id="contact">
+    </div>
+
+
+    <br>
+
+    <div class="page fade-in">
+        <div class="espace_page">
+            <span class="titre">
+                Me contacter
+            </span>
+
+            <br><br>
+            Survolez ici pour voir le texte caché.
+            <div class="show-on-hover">
+
+                <br>
+
+                <br><br>
+
+            </div>
+            <br><br>
+        </div>
+    </div>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Sélectionne les éléments avec les classes .fade-in et .fade-in-side
+            const elements = document.querySelectorAll(".fade-in, .fade-in-side");
+
+            if (elements.length === 0) {
+                console.warn("Aucun élément avec les classes .fade-in ou .fade-in-side n'a été trouvé !");
+                return;
+            }
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        console.log("Element visible : ", entry.target);
+                        entry.target.classList.add("show");
+                        observer.unobserve(entry.target); // Stop observing once animation is triggered
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            // Observes each .fade-in and .fade-in-side element
+            elements.forEach(element => observer.observe(element));
+        });
+
+        const slideIndices = {};
+
+        // Initialisation des diaporamas
+        document.querySelectorAll(".slideshow-container").forEach((container, index) => {
+            const slideshowID = container.getAttribute("data-slideshow");
+            slideIndices[slideshowID] = 1;
+
+            showSlides(slideIndices[slideshowID], slideshowID);
+        });
+
+        // Fonction pour afficher les slides
+        function showSlides(n, slideshowID) {
+            let i;
+            const slides = document.querySelectorAll(`[data-slideshow="${slideshowID}"] .slides`);
+            if (n > slides.length) { slideIndices[slideshowID] = 1; }
+            if (n < 1) { slideIndices[slideshowID] = slides.length; }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            updateDots(slideIndices[slideshowID], slideshowID);
+            slides[slideIndices[slideshowID] - 1].style.display = "block";
+
+        }
+        function plusSlides(n, slideshowID) {
+            showSlides(slideIndices[slideshowID] += n, slideshowID);
+        }
+
+        function currentSlide(n, slideshowID) {
+            showSlides(slideIndices[slideshowID] = n, slideshowID);
+        }
+
+        function updateDots(n, slideshowID) {
+            const dots = document.querySelectorAll(`#dots-${slideshowID} .dot`);
+            dots.forEach(dot => dot.classList.remove("active"));
+            dots[slideIndices[slideshowID] - 1].classList.add("active");
+        }
+
+
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
 </html>
