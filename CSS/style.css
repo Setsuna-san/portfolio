@@ -1,5 +1,5 @@
 .headerFrame {
-  background-image: url(bg4.png);
+  background-image: url("../Background/day.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: fixed;

@@ -8,14 +8,14 @@
 
     <link href="bootstrap.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
 
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="animation.css">
-    <link rel="stylesheet" href="slideshow.css">
+    <link rel="stylesheet" href="CSS/animation.css">
+    <link rel="stylesheet" href="CSS/slideshow.css">
 
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="carte.css">
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/carte.css">
 
 
 </head>
@@ -32,7 +32,7 @@
             <div class="collapse navbar-collapse" id="navbarColor02">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item ">
-                        <a class="nav-link " href="#moi">Qui suis-je ?</a>
+                        <a class="nav-link" href="#moi">Qui suis-je ?</a>
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link" href="#parcours">Mon parcours</a>
@@ -70,16 +70,9 @@
         </div>
     </nav>
 
-    <iframe class="headerFrame" src="./background2/"></iframe>
+    <div class="headerFrame"></div>
 <!-- <div class="background"></div> -->
-
-
-  
-
     <br id="spawn">
-
-
-
     <br><br><br><br><br><br><br><br><br><br><br><br><br>
 
     <div class="spawn">
@@ -164,35 +157,35 @@
                 <div class="carte" onclick="">
                     <div class="titre">Bonjour</div>
                     <div class="contenu">
-                        <img src="reserve/jeux.png" alt="Photo" class="photo">
+                        <img src="Images/jeux.png" alt="Photo" class="photo">
                         <div class="corp">Définition de bonjour</div>
                     </div>
                 </div>
                 <div class="carte" onclick="">
                     <div class="titre">Bonsoir</div>
                     <div class="contenu">
-                        <img src="reserve/jeux.png" alt="Photo" class="photo">
+                        <img src="Images/jeux.png" alt="Photo" class="photo">
                         <div class="corp">Définition de bonsoir</div>
                     </div>
                 </div>
                 <div class="carte" onclick="">
                     <div class="titre">Salut</div>
                     <div class="contenu">
-                        <img src="reserve/jeux.png" alt="Photo" class="photo">
+                        <img src="Images/jeux.png" alt="Photo" class="photo">
                         <div class="corp">Définition de salut</div>
                     </div>
                 </div>
                 <div class="carte" onclick="">
                     <div class="titre">Salut</div>
                     <div class="contenu">
-                        <img src="reserve/jeux.png" alt="Photo" class="photo">
+                        <img src="Images/jeux.png" alt="Photo" class="photo">
                         <div class="corp">Définition de salut</div>
                     </div>
                 </div>
                 <div class="carte" onclick="">
                     <div class="titre">Salut</div>
                     <div class="contenu">
-                        <img src="reserve/jeux.png" alt="Photo" class="photo">
+                        <img src="Images/jeux.png" alt="Photo" class="photo">
                         <div class="corp">Définition de salut</div>
                     </div>
                 </div>
@@ -258,73 +251,10 @@
     </div>
 
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            // Sélectionne les éléments avec les classes .fade-in et .fade-in-side
-            const elements = document.querySelectorAll(".fade-in, .fade-in-side");
 
-            if (elements.length === 0) {
-                console.warn("Aucun élément avec les classes .fade-in ou .fade-in-side n'a été trouvé !");
-                return;
-            }
-
-            const observer = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        console.log("Element visible : ", entry.target);
-                        entry.target.classList.add("show");
-                        observer.unobserve(entry.target); // Stop observing once animation is triggered
-                    }
-                });
-            }, {
-                threshold: 0.1
-            });
-
-            // Observes each .fade-in and .fade-in-side element
-            elements.forEach(element => observer.observe(element));
-        });
-
-        const slideIndices = {};
-
-        // Initialisation des diaporamas
-        document.querySelectorAll(".slideshow-container").forEach((container, index) => {
-            const slideshowID = container.getAttribute("data-slideshow");
-            slideIndices[slideshowID] = 1;
-
-            showSlides(slideIndices[slideshowID], slideshowID);
-        });
-
-        // Fonction pour afficher les slides
-        function showSlides(n, slideshowID) {
-            let i;
-            const slides = document.querySelectorAll(`[data-slideshow="${slideshowID}"] .slides`);
-            if (n > slides.length) { slideIndices[slideshowID] = 1; }
-            if (n < 1) { slideIndices[slideshowID] = slides.length; }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-
-            updateDots(slideIndices[slideshowID], slideshowID);
-            slides[slideIndices[slideshowID] - 1].style.display = "block";
-
-        }
-        function plusSlides(n, slideshowID) {
-            showSlides(slideIndices[slideshowID] += n, slideshowID);
-        }
-
-        function currentSlide(n, slideshowID) {
-            showSlides(slideIndices[slideshowID] = n, slideshowID);
-        }
-
-        function updateDots(n, slideshowID) {
-            const dots = document.querySelectorAll(`#dots-${slideshowID} .dot`);
-            dots.forEach(dot => dot.classList.remove("active"));
-            dots[slideIndices[slideshowID] - 1].classList.add("active");
-        }
-
-
-
-    </script>
+    <script src="JS/fade.js"></script>
+    <script src="JS/slideshow.js"></script>
+    <script src="JS/navActive.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
