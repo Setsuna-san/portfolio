@@ -8,7 +8,6 @@
             overflow: hidden;
             display: flex;
             align-items: center;
-            padding: 10px;
             border: 2px solid #ffffff44;
             border-radius: 8px;
             transition: 0.3s ease;
@@ -88,6 +87,8 @@
         .next:hover {
             cursor: pointer;
             height: 100%;
+            background-color: rgba(255, 255, 255, 0.08);
+
         }
 
 
@@ -96,6 +97,7 @@
         }
 
         .dots-container {
+            padding-left: 2%;
             text-align: left;
             position: absolute;
             flex: 1;

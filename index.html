@@ -38,6 +38,9 @@
                         <a class="nav-link" href="#parcours">Mon parcours</a>
                     </li>
                     <li class="nav-item ">
+                        <a class="nav-link" href="#competences">Mes compétences</a>
+                    </li>
+                    <li class="nav-item ">
                         <a class="nav-link" href="#projets">Mes projets</a>
                     </li>
                     <li class="nav-item ">
@@ -70,21 +73,22 @@
         </div>
     </nav>
 
-    <div class="headerFrame"></div>
-<!-- <div class="background"></div> -->
+    <img src="Background/day.jpg" id="background" alt=""></img>
+
     <br id="spawn">
-    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="blockSpawn">
 
-    <div class="spawn">
-        <div>
-            Bienvenue sur le portfolio de
-            <strong> Alexis Christaud-Braize</strong>
+        <div class="spawn">
+            <div>
+                Bienvenue sur le portfolio de
+                <strong> Alexis Christaud-Braize</strong>
+            </div>
         </div>
-    </div>
 
+    </div>
+    <br>
     <br id="moi">
     <br>
-    <!--      <hr class="fade-in">   -->
 
 
     <br>
@@ -102,24 +106,7 @@
             <br><br>
             <br><br><br><br><br><br>
             <br><br>
-            <div class="slideshow-container" data-slideshow="1">
-                <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-                <div class="slides">Bienvenue</div>
-                <div class="slides">Portfolio</div>
-                <div class="slides">Contact</div>
-                <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
-                <div class="dots-container" id="dots-1">
-                    <span class="dot" onclick="currentSlide(1, 1)"></span>
-                    <span class="dot" onclick="currentSlide(2, 1)"></span>
-                    <span class="dot" onclick="currentSlide(3, 1)"></span>
-                </div>
-            </div>
-
-
-
-
-
-
+            
             <br>
         </div>
         <br id="parcours" class="fade-in">
@@ -132,75 +119,270 @@
     <div class="page fade-in">
         <div class="espace_page">
             <span class="titre">Mon parcours</span>
-            <br><br>
             <br>
+<br>
+<iframe class="timeline" src="Timeline/index.html"></iframe>
+<br><br>
 
-            <div class="slideshow-container" data-slideshow="2">
-                <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
-                <div class="slides">Bienvenue</div>
-                <div class="slides">Portfolio</div>
-                <div class="slides">Contact</div>
-                <a class="next" onclick="plusSlides(1, 2 )">&#10095;</a>
-                <div class="dots-container" id="dots-2">
-                    <span class="dot" onclick="currentSlide(1, 2)"></span>
-                    <span class="dot" onclick="currentSlide(2, 2)"></span>
-                    <span class="dot" onclick="currentSlide(3, 2)"></span>
-                </div>
-            </div>
+        </div>
+        <br id="competences">
+    </div>
+    <br>
 
-
-
+    <!-- mes compétences -->
+    <div class="page fade-in">
+        <div class="espace_page">
+            <span class="titre">Mes compétences</span>
             <br><br>
 
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <h4>
+                                Développement web
+                            </h4>
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample" style="">
+                        <div class="accordion-body">
+                            <div class="grid">
+                                <div class="carte" onclick="">
+                                    <div class="titre">HTML</div>
+                                    <div class="contenu">
+                                        <img src="Images/html.png" alt="Photo" class="photo">
+                                        <div class="corp">Définition de bonjour</div>
+                                    </div>
+                                </div>
+                                <div class="carte" onclick="">
+                                    <div class="titre">CSS</div>
+                                    <div class="contenu">
+                                        <img src="Images/css.png" alt="Photo" class="photo">
+                                        <div class="corp">Définition de bonsoir</div>
+                                    </div>
+                                </div>
+            
+                                <div class="carte" onclick="">
+                                    <div class="titre">JavaScript</div>
+                                    <div class="contenu">
+                                        <img src="Images/js.png" alt="Photo" class="photo">
+                                        <div class="corp">Définition de salut</div>
+                                    </div>
+                                </div>
+            
+                                <div class="carte" onclick="">
+                                    <div class="titre">PHP</div>
+                                    <div class="contenu">
+                                        <img src="Images/php.png" alt="Photo" class="photo">
+                                        <div class="corp">Définition de bonjour</div>
+                                    </div>
+                                </div>
+            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <h4>
+            
+                                Développement d'application
+            
+                            </h4>
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="grid">
+            
+                                <div class="carte" onclick="">
+                                    <div class="titre"> C/C#</div>
+                                    <div class="contenu">
+                                        <img src="Images/c.png" alt="Photo" class="photo">
+                                        <div class="corp">Définition de salut</div>
+                                    </div>
+                                </div>
+            
+                                <div class="carte" onclick="">
+                                    <div class="titre">Python</div>
+                                    <div class="contenu">
+                                        <img src="Images/python.png" alt="Photo" class="photo">
+                                        <div class="corp">Définition de salut</div>
+                                    </div>
+                                </div>
+                                <div class="carte" onclick="">
+                                    <div class="titre">Java</div>
+                                    <div class="contenu">
+                                        <img src="Images/java.png" alt="Photo" class="photo">
+                                        <div class="corp">Définition de salut</div>
+                                    </div>
+                                </div>
+            
+                                <div class="carte" onclick="">
+                                    <div class="titre">TypeScript</div>
+                                    <div class="contenu">
+                                        <img src="Images/ts.png" alt="Photo" class="photo">
+                                        <div class="corp">Définition de bonsoir</div>
+                                    </div>
+                                </div>
+            
+                                <div class="carte" onclick="">
+                                    <div class="titre">React</div>
+                                    <div class="contenu">
+                                        <img src="Images/react.png" alt="Photo" class="photo">
+                                        <div class="corp">Définition de salut</div>
+                                    </div>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <h4>
+                                Gestion de base de données
+                            </h4>
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="grid">
+            
+                                <div class="carte" onclick="">
+                                    <div class="titre"> SQL</div>
+                                    <div class="contenu">
+                                        <div class="corp">
+                        
+                                            <div class="grid">
+                        
+                                                <div class="carte" onclick="">
+                                                    <div class="titre"> SQL developer</div>
+                                                    <div class="contenu">
+                                                        <img src="Images/sqlDev.png" alt="Photo" class="photo">
+                                                        <div class="corp"></div>
+                                                    </div>
+                                                </div>
+                                
+                                                <div class="carte" onclick="">
+                                                    <div class="titre">MySQL</div>
+                                                    <div class="contenu">
+                                                        <img src="Images/sql.png" alt="Photo" class="photo">
+                                                        <div class="corp">Définition de salut</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                        
+                        
+                        
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="carte" onclick="">
+                                    <div class="titre">NoSQL</div>
+                                    <div class="contenu">
+                                        <img src="Images/nosql.png" alt="Photo" class="photo">
+                                        <div class="corp">Définition de salut</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="grid">
-                <div class="carte" onclick="">
-                    <div class="titre">Bonjour</div>
-                    <div class="contenu">
-                        <img src="Images/jeux.png" alt="Photo" class="photo">
-                        <div class="corp">Définition de bonjour</div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <h4>
+                                Gestion de projets
+                            </h4>
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="grid">
+            
+                                <div class="carte" onclick="">
+                                    <div class="titre">Gantt</div>
+                                    <div class="contenu">
+                                        <img src="Images/gantt.png" alt="Photo" class="photo">
+
+
+                                        <div class="corp">
+                                              
+                        
+                        
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="carte" onclick="">
+                                    <div class="titre">Workflow</div>
+                                    <div class="contenu">
+                                        <div class="corp">Définition de workflow</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="carte" onclick="">
-                    <div class="titre">Bonsoir</div>
-                    <div class="contenu">
-                        <img src="Images/jeux.png" alt="Photo" class="photo">
-                        <div class="corp">Définition de bonsoir</div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading5">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                            <h4>
+                                Travail d'équipe 
+                            </h4>
+                        </button>
+                    </h2>
+                    <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="grid">
+            
+                                <div class="carte" onclick="">
+                                    <div class="titre">AGILE</div>
+                                    <div class="contenu">
+                                        <div class="corp">
+                                            Description méthodes agile
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="carte" onclick="">
+                                    <div class="titre">Github</div>
+                                    <div class="contenu">
+                                        <img src="Images/github.png" alt="Photo" class="photo">
+                                        <div class="corp">Définition de salut</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="carte" onclick="">
-                    <div class="titre">Salut</div>
-                    <div class="contenu">
-                        <img src="Images/jeux.png" alt="Photo" class="photo">
-                        <div class="corp">Définition de salut</div>
-                    </div>
-                </div>
-                <div class="carte" onclick="">
-                    <div class="titre">Salut</div>
-                    <div class="contenu">
-                        <img src="Images/jeux.png" alt="Photo" class="photo">
-                        <div class="corp">Définition de salut</div>
-                    </div>
-                </div>
-                <div class="carte" onclick="">
-                    <div class="titre">Salut</div>
-                    <div class="contenu">
-                        <img src="Images/jeux.png" alt="Photo" class="photo">
-                        <div class="corp">Définition de salut</div>
-                    </div>
-                </div>
-                
+
+
+
             </div>
             
-
-
-
-            <br><br><br><br><br><br><br>
-
+            <br><br>
         </div>
         <br id="projets">
     </div>
     <br>
+
 
     <!-- mes projets -->
     <div class="page fade-in">
@@ -220,10 +402,7 @@
     <!-- mes passions -->
     <div class="page fade-in">
         <div class="espace_page"> <span class="titre"> Mes passions</span>
-            <br><br><br><br>
-
-            <iframe src="https://store.steampowered.com/widget/271590/" frameborder="0" width="646"
-                height="190"></iframe><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br>
         </div>
         <br id="contact">
     </div>
@@ -250,6 +429,10 @@
         </div>
     </div>
 
+
+
+
+    
 
 
     <script src="JS/fade.js"></script>
