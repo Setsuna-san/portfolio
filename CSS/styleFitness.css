@@ -1,7 +1,5 @@
 nav {
     position: fixed;
-    border: 2px whitesmoke solid;
-    background-color: rgb(52 ,58 ,64) ;
     height: 20px;
     color: white;
     top: 0;
@@ -28,28 +26,28 @@ iframe {
 }
 
 .dropdown-item:hover {
-    background-color: transparent;
-    color: black;
-    font-weight: bolder;
     transform: scale(105%);
   }
   
-  .dropdown-item svg {
-    max-height: 2rem;
-    padding: 1%;
+  .dropdown-item  {
+    padding: 5%;
+    width: max-content;
   }
   
   .drop:hover .dropdown-menu {
-    display: block;
-    width: 250px;
+    display: flex;
+    flex-direction: column;
   }
   
   .drop .dropdown-menu {
     display: none;
     background-color: whitesmoke;
     border: 1px solid black;
-    border-radius: 20px;
   }
   .dropdown-item {
     color: black;
+  }
+
+  li {
+    list-style: none;
   }
