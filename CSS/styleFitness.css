@@ -23,6 +23,10 @@ iframe {
     
 }
 
+.btn {
+    margin: 9px;
+}
+
 .btn-secondary:hover {
    color: rgb(120, 199, 3);
    transform: translateX(5px);
