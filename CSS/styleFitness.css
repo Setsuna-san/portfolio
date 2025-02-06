@@ -25,6 +25,7 @@ iframe {
 
 .btn {
     margin: 9px;
+    margin-top: 4.5px;
 }
 
 .btn-secondary:hover {
