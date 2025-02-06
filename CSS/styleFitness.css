@@ -3,6 +3,7 @@ body, html {
     margin: 0;
     width: 100%;
     height: 100%;
+    z-index: -2;
 }
 iframe {
     top: 0;
@@ -31,4 +32,8 @@ iframe {
 .btn-secondary:hover {
    color: rgb(120, 199, 3);
    transform: translateX(5px);
+}
+
+.canva {
+    z-index: 0;
 }
