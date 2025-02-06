@@ -1,10 +1,13 @@
 .carte {
+  display: block;
   width: 90%;
   padding-left: 2%;
   padding-top: 1%;
   padding-bottom: 1%;
   border-radius: 5px;
   border: 2px solid rgba(135, 107, 107, 0.238);
+  color: whitesmoke;
+  text-decoration: none;
   transition: 0.6s ease;
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.2);

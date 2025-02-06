@@ -13,6 +13,11 @@ nav a{
     color: white;
     text-decoration: none;
 }
+
+nav a:hover{
+  color: greenyellow;
+  border-color: greenyellow;
+}
 body, html {
     margin: 0;
     width: 100%;
@@ -41,13 +46,35 @@ iframe {
   
   .drop .dropdown-menu {
     display: none;
-    background-color: whitesmoke;
-    border: 1px solid black;
   }
   .dropdown-item {
-    color: black;
+    color: whitesmoke;
   }
 
   li {
     list-style: none;
+    width: 30px;
+    height: 30px;
+  }
+
+  .dropdown-menu {
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: transparent;
+    color: transparent;
+  }
+
+  .dropdown-item {
+    margin: 0;
+    background-color: rgb(43, 41, 41);
+    border: rgb(231, 231, 231) 3px solid;
+    border-radius: 10px;
+    padding: 5px;
+    width: 100%;
+  }
+
+  li svg{
+    width: 30px;
+    height: 30px;
   }
