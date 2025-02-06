@@ -15,6 +15,22 @@ iframe {
 .btn-secondary {
     transition: color 0.4s ease, transform 0.9s ease;
     font-weight: 900;
+    padding: 0px;
+}
+
+.btn {
+    padding: 9px;
+    padding-left: 9px;
+    padding-right: 9px;
+    
+}
+
+.btn:hover  {
+    padding: 9px;
+    padding-left: 9px;
+    padding-right: 9px;
+    color: rgb(120, 199, 3);
+    
 }
 
 .btn-secondary:hover {
