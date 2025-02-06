@@ -18,17 +18,7 @@ iframe {
     padding: 0px;
 }
 
-.btn {
-    padding: 9px;
-    padding-left: 9px;
-    padding-right: 9px;
-    
-}
-
 .btn:hover  {
-    padding: 9px;
-    padding-left: 9px;
-    padding-right: 9px;
     color: rgb(120, 199, 3);
     
 }
