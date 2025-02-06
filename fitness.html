@@ -1,25 +1,81 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="CSS/styleFitness.css">
-</head>
-<body>
-    <nav>
 
-        <li class="nav-item drop ">
-            <a class="nav-link dropdown-toggle">           
+    <link href="bootstrap.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="CSS/styleFitness.css">
+</head>
+
+<body>
+
+
+    <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+       MENU
+        </a>
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+
+            <br>
+
+<p style="text-indent: 15px;">
+  Ce projet à été réalisé dans la cadre de ma formation à  <b>  <strong> l'iut de Blagnac</strong> </b>. 
+          
+</p>
+ <br>
+
+<p style="text-indent: 15px;">
+ J'ai développé ce projet en Février 2024 sous l'encadrement de<i> <b> <strong> Fabrice Pelleau</strong> </b> </i>
+</p>
+
+<br>
+<p style="text-indent: 15px;">
+  Ce projet utilise une <b> <strong> API REST</strong></b> pour le traitement des données, cependant, dû a certain limite technique, 
+  les fonctionnalités de <b> <strong>création  </strong></b> , de  <b> <strong>modification  </strong></b>  et de <b> <strong> suppression </strong></b>  ont été retirer. 
+  </p>
+ <br>
+ <p style="text-indent: 15px;">
+ Le projet reste donc accessible en <b> <strong>  lecture seule </strong></b> et <b> avec <strong>modifications éphémères </strong></b> .
+ </p>
+           
+          </div>
+          <div class="dropdown mt-3">
+
+            <a class="btn btn-secondary" target="_blank" href="index.html#projets"> Retourner
+              au portfolio</a>
+          <a class="btn btn-secondary"  target="_blank" href="fitness.html"> Recharger le
+              projet </a>
+          </div>
+        </div>
+      </div>
+      
+
+        <!-- <li class="nav-item drop ">
+            <a class="nav-link dropdown-toggle">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="#22b948" d="M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM244.7 395.3l-112-112c-4.6-4.6-5.9-11.5-3.5-17.4s8.3-9.9 14.8-9.9l64 0 0-96c0-17.7 14.3-32 32-32l32 0c17.7 0 32 14.3 32 32l0 96 64 0c6.5 0 12.3 3.9 14.8 9.9s1.1 12.9-3.5 17.4l-112 112c-6.2 6.2-16.4 6.2-22.6 0z"/></svg>
+                    <path fill="#22b948"
+                        d="M256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM244.7 395.3l-112-112c-4.6-4.6-5.9-11.5-3.5-17.4s8.3-9.9 14.8-9.9l64 0 0-96c0-17.7 14.3-32 32-32l32 0c17.7 0 32 14.3 32 32l0 96 64 0c6.5 0 12.3 3.9 14.8 9.9s1.1 12.9-3.5 17.4l-112 112c-6.2 6.2-16.4 6.2-22.6 0z" />
+                </svg>
             </a>
             <div class="dropdown-menu">
-                <a class="dropdown-item" rel="noopener noreferrer" target="_blank" href="index.html#projets"> Retourner au site</a>
-                <a class="dropdown-item" rel="noopener noreferrer" target="_blank" href="fitness.html"> Recharger le projet </a>
+                <a class="dropdown-item" rel="noopener noreferrer" target="_blank" href="index.html#projets"> Retourner
+                    au site</a>
+                <a class="dropdown-item" rel="noopener noreferrer" target="_blank" href="fitness.html"> Recharger le
+                    projet </a>
             </div>
-        </li>
-    </nav>
-   <iframe src="prj-fitness/index.html" frameborder="0"></iframe>
+        </li> -->
+    <iframe src="prj-fitness/index.html" frameborder="0"></iframe>
 </body>
+
 </html>

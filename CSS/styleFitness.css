@@ -1,23 +1,4 @@
-nav {
-    position: fixed;
-    height: 20px;
-    color: white;
-    top: 0;
-    left: 0;
-    display: flex;
-    gap: 16px;
-    padding: 5px;
-}
 
-nav a{
-    color: white;
-    text-decoration: none;
-}
-
-nav a:hover{
-  color: greenyellow;
-  border-color: greenyellow;
-}
 body, html {
     margin: 0;
     width: 100%;
@@ -28,53 +9,15 @@ iframe {
     left: 0;
     width: 100%;
     height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+.btn-secondary {
+    transition: color 0.4s ease, transform 0.9s ease;
+    font-weight: 900;
 }
 
-.dropdown-item:hover {
-    transform: scale(105%);
-  }
-  
-  .dropdown-item  {
-    padding: 5%;
-    width: max-content;
-  }
-  
-  .drop:hover .dropdown-menu {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .drop .dropdown-menu {
-    display: none;
-  }
-  .dropdown-item {
-    color: whitesmoke;
-  }
-
-  li {
-    list-style: none;
-    width: 30px;
-    height: 30px;
-  }
-
-  .dropdown-menu {
-    width: 200px;
-    text-align: center;
-    border-radius: 10px;
-    background-color: transparent;
-    color: transparent;
-  }
-
-  .dropdown-item {
-    margin: 0;
-    background-color: rgb(43, 41, 41);
-    border: rgb(231, 231, 231) 3px solid;
-    border-radius: 10px;
-    padding: 5px;
-    width: 100%;
-  }
-
-  li svg{
-    width: 30px;
-    height: 30px;
-  }
+.btn-secondary:hover {
+   color: rgb(120, 199, 3);
+   transform: translateX(5px);
+}
