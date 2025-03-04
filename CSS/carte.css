@@ -14,12 +14,38 @@
   user-select: none;
 }
 
+
+.carteCompetence {
+  display: block;
+  font-size: small;
+  font-weight: 900;
+  width: fit-content;
+  height: fit-content;
+  padding: 0.7%;
+  border-radius: 5px;
+  border: 2px solid rgba(135, 107, 107, 0.238);
+  color: whitesmoke;
+  text-decoration: none;
+  transition: 0.6s ease;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.2);
+  user-select: none;
+}
+
 .grid {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   max-width: 100%;
   gap: 16px;
+}
+
+.gridCompetence {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 100%;
+  gap: 4px;
 }
 
 .carte .photo {
@@ -31,7 +57,6 @@
 .carte .photo:hover {
   transform: scale(103%);
 }
-
 
 .carte .contenu {
   display: flex;
@@ -45,9 +70,8 @@
   border-radius: 15px;
   font-size: 20px;
   font-weight: 800;
-  text-decoration: underline transparent ;
-  transition: 0.8s ease ;
-  
+  text-decoration: underline transparent;
+  transition: 0.8s ease;
 }
 
 .carte .corp {
@@ -58,19 +82,68 @@
 }
 
 .carte:hover {
-
   opacity: 1;
   border-color: whitesmoke;
   transform: scale(101%);
-
 }
 
 .carte::before {
   transition: 0.4s ease;
-  
 }
 .carte .titre:hover {
-  
   color: rgb(99, 218, 216);
 }
 
+
+.carteCompetence .photo {
+  width: 4%;
+  object-fit: contain;
+  transition: 0.4s ease;
+}
+
+.carteCompetence .photo:hover {
+  transform: scale(103%);
+}
+
+.carteCompetence .contenu {
+  display: flex;
+  flex-direction: row; /* Dispose l'image et le corps sur la même ligne */
+  align-items: flex-start; /* Aligne l'image et le texte en haut */
+  width: 100%;
+}
+
+.carteCompetence .titre {
+  text-transform: capitalize;
+  width: fit-content;
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: 800;
+  text-decoration: underline transparent;
+  transition: 0.8s ease;
+}
+
+.carteCompetence .corp {
+  width: 100%;
+  border-radius: 15px;
+  padding-left: 2%;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.carteCompetence:hover {
+  opacity: 1;
+  border-color: whitesmoke;
+  transform: scale(101%);
+}
+
+.carteCompetence::before {
+  transition: 0.4s ease;
+}
+.carteCompetence .titre:hover {
+  color: rgb(99, 218, 216);
+}
+
+
+.carteHover {
+  border-color: whitesmoke;
+}

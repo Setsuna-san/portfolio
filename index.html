@@ -58,9 +58,6 @@
                         <a class="nav-link" href="#projets">Mes projets</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="#passions">Mes passions</a>
-                    </li>
-                    <li class="nav-item ">
                         <a class="nav-link" href="#contact">Me contacter</a>
                     </li>
                     <li class="nav-item drop ">
@@ -153,11 +150,11 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
                             <h4>Développement web</h4>
                         </button>
                     </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                    <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="headingOne"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                             <div class="grid">
@@ -193,15 +190,14 @@
                         </div>
                     </div>
                 </div>
-            
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingTwo">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
                             <h4>Développement d'application</h4>
                         </button>
                     </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                             <div class="grid">
@@ -244,15 +240,14 @@
                         </div>
                     </div>
                 </div>
-            
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingThree">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
                             <h4>Gestion de base de données</h4>
                         </button>
                     </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="headingThree"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                             <div class="grid">
@@ -287,15 +282,14 @@
                         </div>
                     </div>
                 </div>
-            
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingFour">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
                             <h4>Gestion de projets</h4>
                         </button>
                     </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="headingFour"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                             <div class="grid">
@@ -316,7 +310,6 @@
                         </div>
                     </div>
                 </div>
-            
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="heading5">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -344,17 +337,9 @@
                             </div>
                         </div>
                     </div>
-                </div>    
+                </div>
             </div>
-            
-
-            <br><br>
-        </div>
-        <br>
-        <div class="espace_page">
-            <span class="titre">Langues et Qualités</span>
-            <p>Anglais : B2 | Espagnol : A2</p>
-            <p>Qualités : Logique, Volontaire, Dynamique, Ponctuel</p>
+<br>
         </div>
         <br id="projets">
     </div>
@@ -369,52 +354,97 @@
             <span class="titre">Mes projets et expériences</span>
             <br><br>
 
-            <a class="carte" href="fitness.html">
+            <div class="carte carteHover">
                 <div class="titre">Projet Angular</div>
                 <div class="contenu">
                     <div class="corp">
                         Projet de Développement sur 2 semaines, utilisant Angular et REST
+
+                        <br><br>
+
+
+
+                        <a href="fitness.html" class="btn btn-info rounded-2 p-2 m-0"> Aperçu du projet </a>
+
+
+                        <br><br>
+                        <div> Compétences : </div>
+                        <div class="gridCompetence">
+
+
+                            <div class="carteCompetence" data-target="#collapse2">
+                                <div class="contenu">TypeScript</div>
+                            </div>
+                            <div class="carteCompetence" data-target="#collapse1">
+                                <div class="contenu">HTML</div>
+                            </div>
+                            <div class="carteCompetence" data-target="#collapse1">
+                                <div class="contenu">CSS</div>
+                            </div>
+
+                        </div>
+
                     </div>
                 </div>
-            </a>
-            <a class="carte" href="">
-                <div class="titre">Développement d'application de E-commerce</div>
+            </div> <br>
+            <div class="carte carteHover">
+                <div class="titre">Application de E-commerce</div>
                 <div class="contenu">
                     <div class="corp">
-                        Site web dynamique en PHP pour le E-commerce
+                        Développement d'un site web dynamique en PHP pour le E-commerce.
+                        <br><br>
+                        <span class="border border-1 border-info  rounded-2 p-2 m-0"> aperçu impossible </span>
+                      
+                        <br><br>
+                        <div> Compétences : </div>
+                        <div class="gridCompetence">
+
+
+                            <div class="carteCompetence" data-target="#collapse1">
+                                <div class="contenu">PHP</div>
+                            </div>
+                            <div class="carteCompetence" data-target="#collapse1">
+                                <div class="contenu">HTML</div>
+                            </div>
+                            <div class="carteCompetence" data-target="#collapse1">
+                                <div class="contenu">CSS</div>
+                            </div>
+                            <div class="carteCompetence" data-target="#collapse2">
+                                <div class="contenu">Java</div>
+                            </div>
+                            <div class="carteCompetence" data-target="#collapse2">
+                                <div class="contenu">Python</div>
+                            </div>
+                            <div class="carteCompetence" data-target="#collapse3">
+                                <div class="contenu">MySQL</div>
+                            </div>
+                            <div class="carteCompetence" data-target="#collapse5">
+                                <div class="contenu">Github</div>
+                            </div>
+                            <div class="carteCompetence" data-target="#collapse5">
+                                <div class="contenu">AGILE</div>
+                            </div>
+                            <div class="carteCompetence" data-target="#collapse4">
+                                <div class="contenu">Workflow</div>
+                            </div>
+
+
+                        </div>
+
                     </div>
                 </div>
-            </a>
+            </div>
 
         </div>
         <br><br>
         <div class="espace_page">
-            <span class="titre"></span>
+            <span class="titre">Stage en Développement - Olsen Conseil</span>
             <br><br>
-
-            <h3>Stage en Développement - Olsen Conseil</h3>
             <p>Développeur sur FileMaker Pro - Février 2024 - Avril 2024 (Distanciel)</p>
             <br>
         </div>
-        <br id="passions">
-    </div>
-    <br>
-
-    <!-- mes passions -->
-    <div class="page fade-in">
-        <div class="espace_page">
-            <span class="titre">Mes passions</span>
-            <ul>
-                <li>Informatique</li>
-                <li>Jeux-Vidéo</li>
-                <li>Activités Sportives</li>
-                <li>Manga</li>
-            </ul>
-        </div>
         <br id="contact">
     </div>
-
-
     <br>
 
     <!-- contact  -->
@@ -423,15 +453,35 @@
             <span class="titre">
                 Me contacter
             </span>
+
+            <br><br>
+            <div class="email"> &nbsp; <strong>Email : </strong> &nbsp; alexis.christaud@gmail.com &nbsp; </div>
+            <div class="email">
+
+                &nbsp; <strong>Linkedin :</strong>
+                &nbsp; <a class="lienVert" href="https://www.linkedin.com/in/alexis-christaud-braize-4a7a0827b">Alexis
+                    Christaud-Braize</a>
+                &nbsp;
+            </div>
+            <div class="email">
+                &nbsp; <strong>Github : </strong>
+                &nbsp; <a class="lienVert" href="https://github.com/Setsuna-san">Setsuna-san</a>
+                &nbsp;
+            </div>
+            <div class="email">
+                &nbsp; <strong>Discord :</strong>
+                &nbsp; <a class="lienVert" href="https://discord.com/users/458357472969752608">setsuna_san</a> &nbsp;
+            </div>
+
+            <br>
+
+
             <div class="cv-download">
-                <a href="cv.pdf" download="cv.pdf" class="btn btn-primary">
+                <a href="cv.pdf" download="cv.pdf" class="btn btn-primary cv-download">
                     Télécharger mon CV
                 </a>
             </div>
-            
-            <br><br>
-
-            <br><br>
+            <br>
         </div>
     </div>
 
@@ -444,7 +494,40 @@
     <script src="JS/fade.js"></script>
     <script src="JS/slideshow.js"></script>
     <script src="JS/navActive.js"></script>
+    <script>
+        document.querySelectorAll('.carteCompetence').forEach(card => {
+            card.addEventListener('click', function () {
+                const target = this.getAttribute('data-target'); // Récupère l'ID de la section accordéon à ouvrir
+                if (target) {
+                    const element = document.querySelector(target); // Trouve l'élément accordéon
 
+                    if (element) {
+                        // Ferme toutes les sections ouvertes
+                        document.querySelectorAll('.accordion-collapse.show').forEach(openItem => {
+                            openItem.classList.remove('show');
+                        });
+
+                        // Ouvre la bonne section
+                        element.classList.add('show');
+
+                        // Décalage pour éviter d'être caché sous un menu fixe
+                        const offset = 200; // Ajuste cette valeur selon la hauteur de ton menu
+                        const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+                        const offsetPosition = elementPosition - offset;
+
+                        // Fait défiler avec ajustement
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+
+
+
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

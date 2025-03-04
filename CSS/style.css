@@ -167,7 +167,7 @@ h4 {
   background-color: #ffffff48;
 }
 
-.accordion-button::after {  
+.accordion-button::after {
   filter: brightness(300%);
 }
 
@@ -178,10 +178,44 @@ h4 {
 .timeline {
   width: 100%;
   height: 60vh;
-  
 }
 
 body::-webkit-scrollbar {
   display: none;
 }
 
+.lienVert {
+  color: inherit;
+  transition: 0.3s;
+}
+
+.lienVert:hover {
+  color: rgb(120, 199, 3);
+}
+
+.email {
+  background-color: #5c5e5c;
+  border-radius: 15px;
+  width: fit-content;
+  margin: 0.5rem;
+  padding: 0;
+  transition: 0.4s;
+}
+
+.email strong {
+  font-size: 100%;
+  font-weight: 900;
+}
+.email:hover {
+  transform: scale(105%);
+}
+
+.cv-download {
+ transition: 0.4s;
+}
+
+
+.cv-download:hover {
+  color: rgb(120, 199, 3) ;
+  transform: scale(101%);
+}
