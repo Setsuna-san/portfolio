@@ -8,27 +8,31 @@
   z-index: -1;
 }
 
+.grosConteneur {
+  background-color: whitesmoke;
+  border: 7px solid #343a34 ;
+  margin: 5%;
+  margin-top: 0;
+  padding: 2%;
+}
+
+.borderCorp {
+  border: 3px solid #343a3459 ;
+}
+
 .page {
   position: relative;
   z-index: 0;
   width: 100%;
   padding-left: 1%;
   padding-right: 1%;
-  padding-top: 3%;
-  padding-bottom: 3%;
+  padding-top: 1%;
   opacity: 0;
-  background: #343a40;
-  background: linear-gradient(
-    295deg,
-    rgba(207, 207, 207, 0.1) 0%,
-    rgba(255, 220, 220, 0.1) 50%,
-    rgba(166, 199, 207, 0.1) 100%
-  );
   transition: 0.4s ease-in;
 }
 
 .espace_page strong {
-  font-size: xx-large;
+  font-size: large;
 }
 
 .page::before {
@@ -38,12 +42,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(
-    295deg,
-    rgba(155, 133, 133, 1) 0%,
-    rgba(80, 70, 70, 1) 50%,
-    rgba(16, 33, 50, 1) 100%
-  );
   opacity: 0.7;
   transition: opacity 0.4s ease;
   z-index: -1;
@@ -51,22 +49,19 @@
 
 .page:hover::before {
   opacity: 0.9;
-  border-top: white 3px solid;
-  border-bottom: white 3px solid;
 }
 
 .page .espace_page {
   transition: 0.2s ease-in;
-  font-size: larger;
+  font-size: small;
   padding-left: 1%;
-  border-left: 2px solid whitesmoke;
-  color: whitesmoke;
+  color: rgb(0, 0, 0);
 }
 
 .page:hover .espace_page {
-  transform: translate(1%);
   padding-left: 2%;
-  color: whitesmoke;
+  color: rgb(0, 0, 0);
+  background-color: whitesmoke;
   transition: ease 0.5s;
   opacity: 1;
 }
@@ -98,8 +93,8 @@
   font-weight: bolder;
   text-shadow: -4px 4px rgb(0, 0, 0);
   padding: 1%;
-  color: rgb(255, 255, 255);
-  border: 5px solid rgba(221, 225, 230, 0.9);
+  color: whitesmoke;
+  border: 5px solid rgba(0, 0, 0, 0.9);
   font-size: 52px;
   width: fit-content;
   background-color: #343a34;
@@ -114,6 +109,7 @@
 
 .titre {
   font-size: 2.5rem;
+  font-weight: bolder;
 }
 
 .espace_page .link {
@@ -150,7 +146,7 @@
 }
 
 h4 {
-  color: whitesmoke;
+  color: rgb(0, 0, 0);
 }
 
 .accordion-item,
@@ -159,20 +155,32 @@ h4 {
 .accordion-header,
 .accordion-button {
   background-color: transparent;
-  width: 45vw;
-  color: whitesmoke;
+  width: 35vw;
+  color: rgb(0, 0, 0);
 }
 
 .accordion-button:not(.collapsed) {
-  background-color: #ffffff48;
+  background-color: white;
 }
 
-.accordion-button::after {
-  filter: brightness(300%);
+.accordion-collapse {
+  border: 1px solid black;
+  border-top: 1px solid white;
+  border-radius: 0px 0px 10px 10px;
+
 }
 
-.accordion-button:not(.collapsed)::after {
-  filter: brightness(10000%);
+
+.accordion-button {
+  border-radius: 10px;
+
+}
+
+.accordion-header {
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 10px;
+  margin-top : 1% ;
 }
 
 .timeline {
@@ -194,7 +202,7 @@ body::-webkit-scrollbar {
 }
 
 .email {
-  background-color: #5c5e5c;
+  background-color: #b1b1b1;
   border-radius: 15px;
   width: fit-content;
   margin: 0.5rem;

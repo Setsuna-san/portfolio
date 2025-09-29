@@ -5,12 +5,12 @@
   padding-top: 1%;
   padding-bottom: 1%;
   border-radius: 5px;
-  border: 2px solid rgba(135, 107, 107, 0.238);
-  color: whitesmoke;
+  border: 2px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
   text-decoration: none;
   transition: 0.6s ease;
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
   user-select: none;
 }
 
@@ -24,11 +24,11 @@
   padding: 0.7%;
   border-radius: 5px;
   border: 2px solid rgba(135, 107, 107, 0.238);
-  color: whitesmoke;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   transition: 0.6s ease;
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(88, 197, 209, 0.464);
   user-select: none;
 }
 
@@ -83,7 +83,6 @@
 
 .carte:hover {
   opacity: 1;
-  border-color: whitesmoke;
   transform: scale(101%);
 }
 
@@ -132,7 +131,7 @@
 
 .carteCompetence:hover {
   opacity: 1;
-  border-color: whitesmoke;
+  border-color: rgb(0, 0, 0);
   transform: scale(101%);
 }
 
@@ -141,9 +140,4 @@
 }
 .carteCompetence .titre:hover {
   color: rgb(99, 218, 216);
-}
-
-
-.carteHover {
-  border-color: whitesmoke;
 }
