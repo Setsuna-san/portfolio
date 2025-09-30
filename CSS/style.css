@@ -8,6 +8,14 @@
   z-index: -1;
 }
 
+a{
+  transition: 0.4s ease-in-out;
+}
+
+a:hover {
+  color: rgb(120, 199, 3);
+}
+
 .grosConteneur {
   background-color: whitesmoke;
   border: 7px solid #343a34 ;

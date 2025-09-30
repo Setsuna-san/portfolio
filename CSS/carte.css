@@ -9,7 +9,6 @@
   color: rgb(0, 0, 0);
   text-decoration: none;
   transition: 0.6s ease;
-  cursor: pointer;
   background-color: rgba(255, 255, 255, 0.2);
   user-select: none;
 }
@@ -66,7 +65,6 @@
 
 
 .carte .titre {
-  text-transform: capitalize;
   border-radius: 15px;
   font-size: 20px;
   font-weight: 800;

@@ -17,6 +17,12 @@
     <link rel="stylesheet" href="CSS/header.css">
     <link rel="stylesheet" href="CSS/carte.css">
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
     <meta property="og:title" content="Alexis Christaud-Braize - Portfolio" />
 
     <!-- Description de la page -->
@@ -36,6 +42,7 @@
 
 <body>
 
+    <!-- bar de navigation -->
     <nav class="navbar navbar-expand-lg bg-dark " data-bs-theme="dark">
         <div class="container-fluid ">
             <a class="navbar-brand" href="#">Portfolio</a>
@@ -49,10 +56,10 @@
                         <a class="nav-link" href="#moi">Qui suis-je ?</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="#projets&comp">Projets & compétences</a>
+                        <a class="nav-link" href="#projets">Projets & compétences</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="#expériences">Mes expériences</a>
+                        <a class="nav-link" href="#experiences">Mes expériences</a>
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link" href="#contact">Me contacter</a>
@@ -83,6 +90,7 @@
     <img src="Background/day.jpg" id="background" alt=""></img>
 
     <br id="spawn">
+    <!-- cadre de début -->
     <div class="blockSpawn">
 
         <div class="spawn">
@@ -94,50 +102,42 @@
         </div>
 
     </div>
-    <br id="moi">
     <br><br>
 
+    <!-- bloc de contenu -->
     <div class="grosConteneur">
         <div class="borderCorp">
             <!-- qui -->
             <div class="page fade-in">
 
                 <div class="espace_page">
+                    <span id="moi"></span>
                     <span class="titre">A propos de moi</span>
-
-
                     <br>
                     <br>
-
                     Je m'appelle <strong>Alexis</strong>, j'ai <strong>20 ans </strong> et je suis <strong> étudiant en
                         informatique. &nbsp; : )</strong>
                     <br>
-                    <span id="projets&comp"></span>
-
                     <br>
-
                     Je suis née à <strong> Toulouse</strong> et je vis actuellement à <strong> Blagnac.</strong>
-
-                    <br>
                     <br>
                     <br>
                 </div>
-
             </div>
         </div>
 
         <hr style="margin: 2%; ">
 
         <div class="borderCorp">
-
             <!-- mes compétences -->
             <div class="page fade-in">
                 <div class="row">
                     <div class="col-6">
                         <div class="espace_page">
+                            <span id="projets"></span>
                             <span class="titre">Mes compétences</span>
                             <br><br>
-
+                            <!-- Liste de déroulants -->
                             <div class="accordion" id="accordionExample">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
@@ -346,7 +346,6 @@
                     </div>
                     <div class="col-6">
                         <div class="espace_page">
-
                             <span class="titre">Mes projets</span>
                             <br><br>
                             <div class="accordion" id="accordionProjet">
@@ -361,8 +360,9 @@
                                     <div id="collapseP1" class="accordion-collapse collapse" data-bs-parent="">
                                         <div class="accordion-body">
                                             Projet de Développement sur 2 semaines, utilisant Angular et REST
-                                            <a href="fitness.html" class="btn btn-info rounded-2 p-2 m-0"> Aperçu du
-                                                projet </a>
+                                            <a href="fitness.html" class="btn btn-info rounded-2 p-2 m-2">
+                                                Aperçu du projet
+                                            </a>
                                             <div> Compétences : </div>
                                             <div class="gridCompetence">
 
@@ -392,8 +392,8 @@
                                     <div id="collapseP2" class="accordion-collapse collapse" data-bs-parent="">
                                         <div class="accordion-body">
                                             Développement d'un site web dynamique en PHP pour le E-commerce.
-                                            <a href="fitness.html" class="btn btn-info rounded-2 p-2 m-0"> Aperçu du
-                                                projet </a>
+                                            <i class="btn text-light-emphasis">Aucun apercu de projet</i>
+
                                             <div> Compétences : </div>
                                             <div class="gridCompetence">
 
@@ -434,41 +434,64 @@
                             </div>
 
                         </div> <br>
-
-
                     </div>
                 </div>
-                <br id="expériences">
             </div>
         </div>
         <hr style="margin: 2%; ">
 
         <div class="borderCorp">
-
-
             <!-- mes projets -->
             <div class="page fade-in">
                 <div class="espace_page">
+                    <span id="experiences"></span>
                     <span class="titre">Mes expériences</span>
                     <br>
                     <br>
                     <div class="carte">
-                        <span class="titre">Stage en Développement - Olsen Conseil</span>
-                        <br><br>
-                        <p>Développeur sur FileMaker Pro - Février 2024 - Avril 2024 (Distanciel)</p>
-                        <br>
+                        <span style="color: rgb(91, 91, 91); font-size: 1.4rem;"><strong><b style="color: red; font-size: 1.6rem;">Février - Avril 2024 &nbsp;</b> </strong>Stage au poste de Développeur FileMaker - Olsen Conseil</span>
+
+                        <p>8 semaines (Distanciel)</p>
+                        <p style="font-size: 1rem;">
+                            Stage de 8 semaines chez <b><a title="Voir le site - Olsen conseil" rel="noopener"
+                                    target="_blank" href="https://www.olsenagile.com/">Olsen Conseil</a></b>,
+                            consacré au développement d’une application
+                            pour
+                            l’association <a title="Voir le site - Si j'avais su" rel="noopener" target="_blank"
+                                href="https://sijavaissu.org/">Si j’avais su</a>. Réalisation de bases de
+                            données,
+                            d’interfaces et de scripts avec <b>FileMaker</b>, en collaboration à distance avec une
+                            équipe internationale.
+                        </p>
+                    </div>
+                    <br>
+                    <div class="carte">
+                        <span style="color: rgb(91, 91, 91); font-size: 1.4rem;"><strong><b style="color: red; font-size: 1.6rem;">Mars - Juin 2025 &nbsp;</b> </strong>
+                            Stage au poste de développeur PHP - GHT9</span>
+                        <p>14 semaines</p>
+
+                        <p style="font-size: 1rem;">
+                            Stage de 14 semaines chez <b>
+                                <a title="Voir le site - GHT9" rel="noopener" target="_blank"
+                                    href="https://www.ght9.fr/">GHT9</a> </b>, consacré au
+                            développement d’une application
+                            pour
+                            l’association <a href="https://sijavaissu.org/">Si j’avais su</a>. Réalisation de bases de
+                            données,
+                            d’interfaces et de scripts avec <b>FileMaker</b>, en collaboration à distance avec une
+                            équipe internationale.
+                        </p>
                     </div>
                 </div>
-                <br id="contact">
             </div>
             <br>
         </div>
         <hr style="margin: 2%; ">
         <div class="borderCorp">
-
             <!-- contact  -->
             <div class="page fade-in">
                 <div class="espace_page">
+                    <span id="contact"></span>
                     <span class="titre">
                         Me contacter
                     </span>
@@ -505,7 +528,6 @@
                     <br>
                 </div>
             </div>
-
         </div>
     </div>
     </div>
@@ -513,6 +535,42 @@
     <script src="JS/slideshow.js"></script>
     <script src="JS/navActive.js"></script>
     <script>
+        // Décalage global pour tous les ancres #
+        const offset = 200; // Ajuste selon la hauteur de ton menu
+
+        function scrollWithOffset(id) {
+            const element = document.querySelector(id);
+            if (element) {
+                const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+                const offsetPosition = elementPosition - offset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        }
+
+        // Gestion des clics sur tous les liens #
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const target = this.getAttribute('href');
+                if (target && target !== "#") {
+                    e.preventDefault(); // Bloque le scroll natif
+                    scrollWithOffset(target);
+                }
+            });
+        });
+
+        // Gestion si on arrive avec un hash dans l’URL (redirection externe ou reload avec #)
+        window.addEventListener('load', function () {
+            if (window.location.hash) {
+                scrollWithOffset(window.location.hash);
+            }
+        });
+
+
+        // redirection de projet -> conpetences
         document.querySelectorAll('.carteCompetence').forEach(card => {
             card.addEventListener('click', function () {
                 const target = this.getAttribute('data-target'); // Récupère l'ID de la section accordéon à ouvrir
@@ -546,6 +604,7 @@
 
 
     </script>
+    <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
