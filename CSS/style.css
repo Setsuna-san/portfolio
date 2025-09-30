@@ -14,7 +14,7 @@ a:hover {
 }
 
 .grosConteneur {
-  background-color: whitesmoke;
+  background-color: white;
   border: 7px solid #343a34 ;
   margin: 5%;
   margin-top: 0;
@@ -22,6 +22,8 @@ a:hover {
 }
 
 .borderCorp {
+  background-color: whitesmoke;
+
   border: 3px solid #343a3459 ;
 }
 
