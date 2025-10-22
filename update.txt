@@ -1,0 +1,8 @@
+Projets 
+    pelantheon -> précise qu'il est ciblé pour telephone
+    developper plus la partie afficher dans la page principale
+    Ajouter les dates 
+    Dans l'aperçu, ajouter des icons devant les boutons
+
+Mes ecpériences 
+    translate sur le hover n'est pas compatible avec les cadre, à resoudre 

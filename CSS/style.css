@@ -8,6 +8,10 @@
 html {
 }
 
+.no-select {
+  user-select: none;
+}
+
 
 a {
   transition: 0.4s ease-in-out;
@@ -259,18 +263,19 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-.lienVert {
+.lienContact {
   color: inherit;
   transition: 0.3s;
 }
 
-.lienVert:hover {
-  color: rgb(120, 199, 3);
+.lienContact:hover {
+  color: rgb(0, 34, 254);
 }
 
 .email {
   background-color: #b1b1b1;
   border-radius: 15px;
+  font-size: 1rem;
   width: fit-content;
   margin: 0.5rem;
   padding: 0;
