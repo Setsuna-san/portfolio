@@ -8,8 +8,6 @@ html {
   height: 100%;
 }
 
-
-
 body {
   height: inherit;
   display: flex;
@@ -18,12 +16,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: whitesmoke;
-
 }
 
 body::-webkit-scrollbar {
-	display: none;
-  }
+  display: none;
+}
 
 a {
   color: #999999;
@@ -45,6 +42,7 @@ div.item {
   padding: 0rem 1rem 0rem 1rem;
 }
 #timeline {
+  color: black;
   position: relative;
   display: table;
   width: 100%;
@@ -89,6 +87,7 @@ div.item {
   padding-bottom: 1.25em;
   margin-bottom: 2.2em;
 }
+
 #timeline section.year section h4 {
   bottom: 0;
   font-size: 1em;
@@ -137,6 +136,7 @@ div.item {
 #timeline section.year section ul li {
   margin-left: 0.5rem;
   padding-top: 2rem;
+  
 }
 #timeline section.year section ul li:before {
   content: "·";
@@ -145,6 +145,7 @@ div.item {
 }
 #timeline section.year section ul li:not(:first-child) {
   margin-top: 0.5rem;
+  
 }
 #timeline section.year section ul li span.price {
   color: mediumturquoise;
@@ -152,6 +153,7 @@ div.item {
 }
 .usd {
   display: inline;
+  
 }
 svg {
   border: 3px solid white;

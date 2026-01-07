@@ -1,754 +1,958 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
 
-    <link href="bootstrap.css" rel="stylesheet">
+    <link href="bootstrap.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/style.css" />
 
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="CSS/animation.css">
-    <link rel="stylesheet" href="CSS/slideshow.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="CSS/animation.css" />
+    <link rel="stylesheet" href="CSS/slideshow.css" />
 
-    <link rel="stylesheet" href="CSS/header.css">
-    <link rel="stylesheet" href="CSS/carte.css">
+    <link rel="stylesheet" href="CSS/header.css" />
+    <link rel="stylesheet" href="CSS/carte.css" />
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <meta property="og:title" content="Alexis Christaud-Braize - Portfolio" />
 
     <!-- Description de la page -->
-    <meta property="og:description" content="site de présentation d'Alexis Christaud-Braize" />
+    <meta
+      property="og:description"
+      content="site de présentation d'Alexis Christaud-Braize"
+    />
 
     <!-- URL de la page -->
-    <meta property="og:url" content="https://setsuna-san.github.io/portfolio/" />
+    <meta
+      property="og:url"
+      content="https://setsuna-san.github.io/portfolio/"
+    />
 
     <!-- Image d'aperçu -->
-    <meta property="og:image" content="https://setsuna-san.github.io/portfolio/paf.gif" />
+    <meta
+      property="og:image"
+      content="https://setsuna-san.github.io/portfolio/paf.gif"
+    />
 
     <!-- Type de contenu (website, article, video, etc.) -->
     <meta property="og:type" content="website" />
+  </head>
 
-
-</head>
-
-<body>
-
+  <body>
     <!-- bar de navigation -->
-    <nav class="navbar navbar-expand-lg bg-dark " data-bs-theme="dark">
-        <div class="container-fluid ">
-            <a class="navbar-brand" href="#">Portfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
-                aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarColor02">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item ">
-                        <a class="nav-link" href="#moi">Qui suis-je ?</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="#parcours">Mon parcours</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="#projets">Projets & compétences</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="#experiences">Mes expériences</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="#contact">Me contacter</a>
-                    </li>
-                    <li class="nav-item drop ">
-                        <a class="nav-link dropdown-toggle">Réseaux professionnels</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" rel="noopener noreferrer" target="_blank"
-                                href="https://github.com/Setsuna-san"><svg xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 496 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                                    <path
-                                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
-                                </svg> Github</a>
-                            <a class="dropdown-item" rel="noopener noreferrer" target="_blank"
-                                href="https://www.linkedin.com/in/alexis-christaud-braize-4a7a0827b/">
-                                <svg xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                                    <path fill="#26577d"
-                                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
-                                </svg> Linkedin</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Portfolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarColor02"
+          aria-controls="navbarColor02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor02">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#moi">Qui suis-je ?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#parcours">Mon parcours</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projets">Projets & compétences</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experiences">Mes expériences</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Me contacter</a>
+            </li>
+            <li class="nav-item drop">
+              <a class="nav-link dropdown-toggle">Réseaux professionnels</a>
+              <div class="dropdown-menu">
+                <a
+                  class="dropdown-item"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  href="https://github.com/Setsuna-san"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 496 512"
+                  >
+                    <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                      d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                    />
+                  </svg>
+                  Github</a
+                >
+                <a
+                  class="dropdown-item"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  href="https://www.linkedin.com/in/alexis-christaud-braize-4a7a0827b/"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                      fill="#26577d"
+                      d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                    />
+                  </svg>
+                  Linkedin</a
+                >
+              </div>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
-    <img src="Background/cube.jpg" id="background" alt=""></img>
+    <img src="Background/cube.jpg" id="background" alt="" />
 
-    <br id="spawn">
+    <br id="spawn" />
     <!-- cadre de début -->
     <div class="blockSpawn no-select">
-
-
-        <div class="spawn">
-            <div>
-                Bienvenue sur le portfolio de
-                <strong> Alexis Christaud-Braize</strong>
-                <br>
-            </div>
+      <div class="spawn">
+        <div>
+          Bienvenue sur le portfolio de
+          <strong> Alexis Christaud-Braize</strong>
+          <br />
         </div>
+      </div>
 
+      <div
+        style="
+          background-color: #343a34;
+          border: 4px solid black;
+          position: absolute;
+          transform: translateY(20vh);
+          color: black;
+          font-weight: 900;
+          font-size: 1.8rem;
+        "
+      >
         <div
-            style="background-color: #343a34; border: 4px solid black; position: absolute; transform: translateY(20vh); color: black; font-weight: 900; font-size: 1.8rem;">
-            <div style="background-color: wheat; width: max-content; padding: 5px 13px;">
-                <i class="fa-solid fa-triangle-exclamation"></i>
-                Site toujours en construction
-                <i class="fa-solid fa-triangle-exclamation"></i>
-
-            </div>
+          style="background-color: wheat; width: max-content; padding: 5px 13px"
+        >
+          <i class="fa-solid fa-triangle-exclamation"></i>
+          Site toujours en construction
+          <i class="fa-solid fa-triangle-exclamation"></i>
         </div>
-
+      </div>
     </div>
 
-
-
-    <br><br>
+    <br /><br />
 
     <!-- bloc de contenu -->
     <div class="grosConteneur">
-        <div class="borderCorp">
-            <!-- qui -->
-            <div class="page fade-in">
-
-                <div class="espace_page">
-                    <span id="moi"></span>
-                    <span class="titre">A propos de moi</span>
-                    <br>
-                    <br>
-                    Je m'appelle <strong>Alexis</strong>, j'ai <strong>20 ans </strong> et je suis <strong> étudiant en
-                        informatique. &nbsp; : )</strong>
-                    <br>
-                    <br>
-                    Je suis né à <strong> Toulouse</strong> et je vis actuellement à <strong> Blagnac.</strong>
-                    <br>
-                    <br>
+      <div class="borderCorp">
+        <!-- qui -->
+        <div class="page fade-in">
+          <div class="espace_page">
+            <span id="moi"></span>
+            <p class="titre">A propos de moi</p>
+            <br />
+            <form action="" style="font-size: 1.3em">
+              <div
+                style="width: 100%; display: flex; gap: 2em; flex-wrap: wrap"
+              >
+                <div>
+                  <label for="prenom">Prénom:</label>
+                  <input name="prenom" type="text" value="Alexis" disabled />
                 </div>
-            </div>
-        </div>
-
-        <hr style="margin: 2%; ">
-
-        <div class="borderCorp">
-            <!-- qui -->
-            <div class="page fade-in">
-
-                <div class="espace_page">
-                    <span id="parcours"></span>
-                    <span class="titre">Mon parcours</span>
-                    <br>
-                    <br>
-                    <span style="font-size: 1rem;">
-                        Je ne suis pas aller a la créche... <br>
-                        Je suis aller a l'école maternelle de Tarabel... <br>
-                        Je suis ensuite entrée a l'école primaire du même village... <br>
-                        J'ai continuer ma scolarité dans le collège Francois Mitterand de Caraman ... <br>
-                        J'ai spécialisée mes études au lycée Pierre-Paul Riquet de St-Orens de Gameville en Bac
-                        technologique STI2D... <br>
-                        Et pour finir le BUT info de l'IUT de Blagnac <br>
-                        <br>
-                    </span>
+                <div>
+                  <label for="nom">Nom :</label>
+                  <input
+                    name="nom"
+                    type="text"
+                    value="Christaud-Braize"
+                    disabled
+                  />
                 </div>
-            </div>
+                <div>
+                  <label for="date">Naissance :</label>
+                  <input name="date" type="date" value="2004-05-25" disabled />
+                </div>
+
+                <div>
+                  <label for="ville">Ville :</label>
+                  <input name="ville" type="text" value="Toulouse" disabled />
+                </div>
+              </div>
+              <br />
+
+              <div>
+                <label for="description">Description :</label>
+                <br />
+                <textarea
+                  style="width: 100%"
+                  name="description"
+                  id="description"
+                  rows="6"
+                  disabled
+                >
+ - Jeune diplômé du BUT Informatique de Blagnac.
+ - Recherche un poste en développement informatique, particulièrement en développement web et logiciel.
+ - Curieux et motivé, je souhaite mettre mes compétences au service de solutions utiles et innovantes
+                </textarea>
+              </div>
+
+              <br /><br />
+            </form>
+            <br />
+          </div>
         </div>
+      </div>
 
-        <hr style="margin: 2%; ">
+      <hr style="margin: 2%" />
 
+      <div class="borderCorp">
+        <!-- qui -->
 
-        <div class="borderCorp">
-            <!-- mes compétences -->
-            <div class="page fade-in">
-                <div class="row">
-                    <div class="col-6">
-                        <div class="espace_page">
-                            <span id="projets"></span>
-                            <span class="titre">Mes compétences</span>
-                            <br><br>
-                            <!-- Liste de déroulants -->
-                            <div class="accordion" id="accordionExample">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false"
-                                            aria-controls="">
-                                            <h5 style="margin: 0;"> <strong>Développement web</strong> </h5>
-                                        </button>
-                                    </h2>
-                                    <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="">
-                                        <div class="accordion-body">
-                                            <div class="grid">
-                                                <div class="carte">
-                                                    <div class="titre">HTML</div>
-                                                    <div class="contenu">
-                                                        <img src="Images/html.png" alt="Photo" class="photo">
-                                                        <div class="corp">Langage de structuration des pages web.</div>
-                                                    </div>
-                                                </div>
-                                                <div class="carte">
-                                                    <div class="titre">CSS</div>
-                                                    <div class="contenu">
-                                                        <img src="Images/css.png" alt="Photo" class="photo">
-                                                        <div class="corp">Langage de mise en forme des sites.</div>
-                                                    </div>
-                                                </div>
-                                                <div class="carte">
-                                                    <div class="titre">JavaScript</div>
-                                                    <div class="contenu">
-                                                        <img src="Images/js.png" alt="Photo" class="photo">
-                                                        <div class="corp">Langage de programmation pour sites
-                                                            interactifs.
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="carte">
-                                                    <div class="titre">PHP</div>
-                                                    <div class="contenu">
-                                                        <img src="Images/php.png" alt="Photo" class="photo">
-                                                        <div class="corp">Langage serveur pour sites dynamiques.</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false"
-                                            aria-controls="collapse2">
-                                            <h5 style="margin: 0;"> <strong>Développement d'applications</strong> </h5>
-                                        </button>
-                                    </h2>
-                                    <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="">
-                                        <div class="accordion-body">
-                                            <div class="grid">
-                                                <div class="carte">
-                                                    <div class="titre">C/C#</div>
-                                                    <div class="contenu">
-                                                        <img src="Images/c.png" alt="Photo" class="photo">
-                                                        <div class="corp">Langage utilisé pour développer des logiciels
-                                                            et applications.</div>
-                                                    </div>
-                                                </div>
-                                                <div class="carte">
-                                                    <div class="titre">Python</div>
-                                                    <div class="contenu">
-                                                        <img src="Images/python.png" alt="Photo" class="photo">
-                                                        <div class="corp">Langage polyvalent et facile à apprendre.
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="carte">
-                                                    <div class="titre">Java</div>
-                                                    <div class="contenu">
-                                                        <img src="Images/java.png" alt="Photo" class="photo">
-                                                        <div class="corp">Langage orienté objet très utilisé.</div>
-                                                    </div>
-                                                </div>
-                                                <div class="carte">
-                                                    <div class="titre">TypeScript</div>
-                                                    <div class="contenu">
-                                                        <img src="Images/ts.png" alt="Photo" class="photo">
-                                                        <div class="corp">Extension de JavaScript avec typage statique.
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="carte">
-                                                    <div class="titre">React</div>
-                                                    <div class="contenu">
-                                                        <img src="Images/react.png" alt="Photo" class="photo">
-                                                        <div class="corp">Bibliothèque JavaScript pour interfaces
-                                                            dynamiques.
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false"
-                                            aria-controls="collapse3">
-                                            <h4>Gestion de base de données</h4>
-                                        </button>
-                                    </h2>
-                                    <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="">
-                                        <div class="accordion-body">
-                                            <div class="grid">
-                                                <div class="carte">
-                                                    <div class="titre">SQL</div>
-                                                    <div class="contenu">
-                                                        <div class="corp">Langage pour bases de données relationnelles.
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="carte">
-                                                    <div class="titre">SQL Developer</div>
-                                                    <div class="contenu">
-                                                        <img src="Images/sqlDev.png" alt="Photo" class="photo">
-                                                        <div class="corp">Outil de gestion SQL d’Oracle.</div>
-                                                    </div>
-                                                </div>
-                                                <div class="carte">
-                                                    <div class="titre">MySQL</div>
-                                                    <div class="contenu">
-                                                        <img src="Images/sql.png" alt="Photo" class="photo">
-                                                        <div class="corp">Système de gestion de bases relationnelles.
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="carte">
-                                                    <div class="titre">NoSQL</div>
-                                                    <div class="contenu">
-                                                        <img src="Images/nosql.png" alt="Photo" class="photo">
-                                                        <div class="corp">Bases de données non relationnelles, plus
-                                                            flexibles.
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false"
-                                            aria-controls="collapse4">
-                                            <h5 style="margin: 0;"> <strong>Gestion de projets</strong></h5>
-                                        </button>
-                                    </h2>
-                                    <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="">
-                                        <div class="accordion-body">
-                                            <div class="grid">
-                                                <div class="carte">
-                                                    <div class="titre">Gantt</div>
-                                                    <div class="contenu">
-                                                        <img src="Images/gantt.png" alt="Photo" class="photo">
-                                                        <div class="corp">Diagramme pour planifier les projets.</div>
-                                                    </div>
-                                                </div>
-                                                <div class="carte">
-                                                    <div class="titre">Workflow</div>
-                                                    <div class="contenu">
-                                                        <div class="corp">Organisation des tâches en étapes.</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false"
-                                            aria-controls="collapse5">
-                                            <h5 style="margin: 0;"> <strong>Travail d'équipe</strong> </h5>
-                                        </button>
-                                    </h2>
-                                    <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="">
-                                        <div class="accordion-body">
-                                            <div class="grid">
-                                                <div class="carte">
-                                                    <div class="titre">AGILE</div>
-                                                    <div class="contenu">
-                                                        <div class="corp">Méthodes agiles pour la gestion de projet en
-                                                            équipe.</div>
-                                                    </div>
-                                                </div>
-                                                <div class="carte">
-                                                    <div class="titre">Github</div>
-                                                    <div class="contenu">
-                                                        <img src="Images/github.png" alt="Photo" class="photo">
-                                                        <div class="corp">Plateforme de gestion de code collaboratif.
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <br>
+        <!-- mon parcours -->
+        <div class="page fade-in">
+          <div class="espace_page">
+            <span class="titre">Mon parcours</span>
+
+            <br />
+            <br />
+            <div class="timeline">
+              <!-- 2025 -->
+              <div class="timeline-item">
+                <span class="date">Mai 2025</span>
+                <div class="content">
+                  <h3>Obtention du BUT Informatique – IUT de Blagnac</h3>
+                </div>
+              </div>
+
+              <div class="timeline-item timeline-indent">
+                <span class="date">Mars - Avril 2025</span>
+                <div class="content">
+                  <h3>Stagiaire développeur PHP – GHT9</h3>
+                  <a href="https://www.ght9.fr/" target="_blank" rel="noopener"
+                    >https://www.ght9.fr/</a
+                  >
+                </div>
+              </div>
+
+              <!-- 2024 -->
+              <div class="timeline-item timeline-indent">
+                <span class="date">Fév – Avr 2024</span>
+                <div class="content">
+                  <h3>Stagiaire – Olsen Conseil</h3>
+                  <a
+                    href="https://www.olsenagile.com/"
+                    target="_blank"
+                    rel="noopener"
+                    >https://www.olsenagile.com/</a
+                  >
+                </div>
+              </div>
+
+              <div class="timeline-item timeline-indent">
+                <span class="date">Mai 2023 – Fév 2024</span>
+                <div class="content">
+                  <h3>Préparateur de commandes – Drive E.Leclerc Blagnac</h3>
+                  <p>Emploi à mi-temps</p>
+                </div>
+              </div>
+
+              <!-- 2022 - 2025 -->
+              <div class="timeline-item">
+                <span class="date">Sept. 2022</span>
+                <div class="content">
+                  <h3>Début du BUT Informatique – IUT de Blagnac</h3>
+                </div>
+              </div>
+
+              <!-- 2022 -->
+              <div class="timeline-item">
+                <span class="date">2019 - 2022</span>
+                <div class="content">
+                  <h3>Baccalauréat Technologique STI2D</h3>
+                  <p>Option Systèmes d’Information et Numérique (SIN)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br id="competences" />
+        </div>
+      </div>
+
+      <hr style="margin: 2%" />
+
+      <div class="borderCorp">
+        <!-- mes compétences -->
+        <div class="page fade-in">
+          <div class="row">
+            <div class="col-6">
+              <div class="espace_page">
+                <span id="projets"></span>
+                <span class="titre">Mes compétences</span>
+                <br /><br />
+                <!-- Liste de déroulants -->
+
+                <!-- Dev web -->
+                <div class="comp-rose">
+                  <h6 class="categ"><strong>Développement web</strong></h6>
+                  <div class="grid">
+                    <div class="carte">
+                      <div class="contenu">
+                        <img src="Images/html.png" alt="Photo" class="photo" />
+                        <div class="titre">HTML</div>
+                        <div class="corp">
+                          Langage de structuration des pages web.
                         </div>
+                      </div>
                     </div>
-                    <div class="col-6">
-                        <div class="espace_page">
-                            <span class="titre">Mes projets</span>
-                            <br><br>
-                            <div class="accordion" id="accordionProjet">
-                                <!-- <div class="accordion" id="accordionProjet" style="max-height: 318px ; overflow-y: auto; width: 100%; "> -->
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseP3" aria-expanded="false"
-                                            aria-controls="">
-                                            <h5 style="margin: 0;"> <strong>Site d'évaluation de bieres</strong> - Mai
-                                                2025
-                                            </h5>
-                                        </button>
-                                    </h2>
-                                    <div id="collapseP3" class="accordion-collapse collapse" data-bs-parent="">
-                                        <div class="accordion-body">
-                                            <span class="projetPerso">Projet personnel</span>
-                                            <span class="projetSolo">Seul</span>
-                                            <br><br>
-                                            L'objectif de ce site est de permettre la <span
-                                                style="color: red;">classification de
-                                                bieres</span>
-                                            en fonction des notes attribuées par les utilisateurs.
-                                            <br>
-
-                                            Ce site est à destination d'un cercle fermé de personnes, mais il résulte
-                                            des compétences développées sur le <span style="color: red;">projet Angular
-                                                de 2024</span> que j’ai continué à explorer.
-
-                                            <br><br>
-                                            Les technologies utilisées sont <strong>Angular</strong> pour l'interface et
-                                            <strong>Firebase</strong>
-                                            (firestore) pour l'hébergement du site et des données
-                                            <br><br>
-                                            En développement depuis mai 2025, il est toujours mis à jour de manière
-                                            récurrente.
-                                            <br>
-
-                                            <a title="Voir l'aperçu" href="https://les-pelatiens.web.app/accueil"
-                                                rel="noopener" target="_blank" class="btn btn-info rounded-2 p-2 m-2">
-                                                Aperçu du projet
-                                            </a>
-                                            <div> Compétences : </div>
-                                            <div class="gridCompetence">
-
-
-                                                <div class="carteCompetence" data-target="#collapse2">
-                                                    <div class="contenu">TypeScript</div>
-                                                </div>
-                                                <div class="carteCompetence" data-target="#collapse1">
-                                                    <div class="contenu">HTML</div>
-                                                </div>
-                                                <div class="carteCompetence" data-target="#collapse1">
-                                                    <div class="contenu">CSS</div>
-                                                </div>
-                                                <div class="carteCompetence" data-target="#collapse5">
-                                                    <div class="contenu">Github</div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseP1" aria-expanded="false"
-                                            aria-controls="">
-                                            <h5 style="margin: 0;"> <strong>Application Angular</strong> - Fév. 2024
-                                            </h5>
-                                        </button>
-                                    </h2>
-                                    <div id="collapseP1" class="accordion-collapse collapse" data-bs-parent="">
-                                        <div class="accordion-body">
-                                            <span class="projetUniv">Projet universitaire</span>
-                                            <span class="projetSolo">Seul</span>
-                                            <br><br>
-                                            Découvrir, comprendre puis réaliser une application web monopage utilisant
-                                            une API REST.
-                                            <br>
-                                            <a title="Voir l'aperçu" href="fitness.html" target="_blank"
-                                                class="btn btn-info rounded-2 p-2 m-2">
-                                                Aperçu du projet
-                                            </a>
-                                            <div> Compétences : </div>
-                                            <div class="gridCompetence">
-
-
-                                                <div class="carteCompetence" data-target="#collapse2">
-                                                    <div class="contenu">TypeScript</div>
-                                                </div>
-                                                <div class="carteCompetence" data-target="#collapse1">
-                                                    <div class="contenu">HTML</div>
-                                                </div>
-                                                <div class="carteCompetence" data-target="#collapse1">
-                                                    <div class="contenu">CSS</div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseP2" aria-expanded="false"
-                                            aria-controls="">
-                                            <h5 style="margin: 0;"><strong>Site de e-commerce</strong> - Déc. 2023 </h5>
-                                        </button>
-                                    </h2>
-                                    <div id="collapseP2" class="accordion-collapse collapse" data-bs-parent="">
-                                        <div class="accordion-body">
-                                            <span class="projetUniv">Projet universitaire</span>
-                                            <span class="projetEquipe">En équipe</span>
-                                            <br><br>
-
-                                            Développement d'un site web dynamique en PHP pour le E-commerce et d'une
-                                            interface de gestion des stocks en JavaFX.
-                                            <i class="btn text-light-emphasis">Aucun apercu de projet</i>
-
-                                            <div> Compétences : </div>
-                                            <div class="gridCompetence">
-
-
-                                                <div class="carteCompetence" data-target="#collapse1">
-                                                    <div class="contenu">PHP</div>
-                                                </div>
-                                                <div class="carteCompetence" data-target="#collapse1">
-                                                    <div class="contenu">HTML</div>
-                                                </div>
-                                                <div class="carteCompetence" data-target="#collapse1">
-                                                    <div class="contenu">CSS</div>
-                                                </div>
-                                                <div class="carteCompetence" data-target="#collapse2">
-                                                    <div class="contenu">Java</div>
-                                                </div>
-                                                <div class="carteCompetence" data-target="#collapse2">
-                                                    <div class="contenu">Python</div>
-                                                </div>
-                                                <div class="carteCompetence" data-target="#collapse3">
-                                                    <div class="contenu">MySQL</div>
-                                                </div>
-                                                <div class="carteCompetence" data-target="#collapse5">
-                                                    <div class="contenu">Github</div>
-                                                </div>
-                                                <div class="carteCompetence" data-target="#collapse5">
-                                                    <div class="contenu">AGILE</div>
-                                                </div>
-                                                <div class="carteCompetence" data-target="#collapse4">
-                                                    <div class="contenu">Workflow</div>
-                                                </div>
-
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div> <br>
+                    <div class="carte">
+                      <div class="contenu">
+                        <img src="Images/css.png" alt="Photo" class="photo" />
+                        <div class="titre">CSS</div>
+                        <div class="corp">
+                          Langage de mise en forme des sites.
+                        </div>
+                      </div>
                     </div>
+                    <div class="carte">
+                      <div class="contenu">
+                        <img src="Images/js.png" alt="Photo" class="photo" />
+                        <div class="titre">JavaScript</div>
+                        <div class="corp">
+                          Langage de programmation pour sites interactifs.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carte">
+                      <div class="contenu">
+                        <img src="Images/php.png" alt="Photo" class="photo" />
+                        <div class="titre">PHP</div>
+                        <div class="corp">
+                          Langage serveur pour sites dynamiques.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-            </div>
-        </div>
-        <hr style="margin: 2%; ">
 
-        <div class="borderCorp">
-            <!-- mes projets -->
-            <div class="page fade-in">
-                <div class="espace_page">
-                    <span id="experiences"></span>
-                    <span class="titre">Mes expériences</span>
-                    <br>
-                    <br>
-                    <!-- stage GHT9 -->
+                <!-- dev app  -->
+                <div class="comp-bleu">
+                  <h6 class="categ">
+                    <strong>Développement d'applications</strong>
+                  </h6>
+                  <div class="grid">
                     <div class="carte">
-                        <span style="color: rgb(91, 91, 91); font-size: 1.4rem;"><strong><b
-                                    style="color: rgb(9, 159, 157); font-size: 1.6rem;">Mars - Juin 2025 &nbsp;</b>
-                            </strong>
-                            Stage au poste de développeur PHP - GHT9</span>
-                        <p>14 semaines</p>
-
-                        <p style="font-size: 1rem;">
-                            Stage de 14 semaines chez <b>
-                                <a title="Voir le site - GHT9" rel="noopener" target="_blank"
-                                    href="https://www.ght9.fr/">GHT9</a> </b>, consacré au
-                            développement d’une application
-                            pour
-                            l’association <a href="https://sijavaissu.org/">Si j’avais su</a>. Réalisation de bases de
-                            données,
-                            d’interfaces et de scripts avec <b>FileMaker</b>, en collaboration à distance avec une
-                            équipe internationale.
-                        </p>
+                      <div class="contenu">
+                        <img src="Images/c.png" alt="Photo" class="photo" />
+                        <div class="titre">C/C#</div>
+                        <div class="corp">
+                          Langage utilisé pour développer des logiciels et
+                          applications.
+                        </div>
+                      </div>
                     </div>
-                    <br>
-                    <!-- stage olsen -->
                     <div class="carte">
-                        <span style="color: rgb(91, 91, 91); font-size: 1.4rem;"><strong><b
-                                    style="color: rgb(9, 159, 157); font-size: 1.6rem;">Février - Avril 2024 &nbsp;</b>
-                            </strong>Stage au poste de Développeur FileMaker - Olsen Conseil</span>
-
-                        <p>8 semaines (Distanciel)</p>
-                        <p style="font-size: 1rem;">
-                            Stage de 8 semaines chez <b><a title="Voir le site - Olsen conseil" rel="noopener"
-                                    target="_blank" href="https://www.olsenagile.com/">Olsen Conseil</a></b>,
-                            consacré au développement d’une application
-                            pour
-                            l’association <a title="Voir le site - Si j'avais su" rel="noopener" target="_blank"
-                                href="https://sijavaissu.org/">Si j’avais su</a>. Réalisation de bases de
-                            données,
-                            d’interfaces et de scripts avec <b>FileMaker</b>, en collaboration à distance avec une
-                            équipe internationale.
-                        </p>
+                      <div class="contenu">
+                        <img
+                          src="Images/python.png"
+                          alt="Photo"
+                          class="photo"
+                        />
+                        <div class="titre">Python</div>
+                        <div class="corp">
+                          Langage polyvalent et facile à apprendre.
+                        </div>
+                      </div>
                     </div>
-                    <br>
-                    <!-- stage olsen -->
                     <div class="carte">
-                        <span style="color: rgb(91, 91, 91); font-size: 1.4rem;"><strong><b
-                                    style="color: rgb(9, 159, 157); font-size: 1.6rem;">Mai 2023 - Février 2024
-                                    &nbsp;</b>
-                            </strong>Préparateur de commandes - E.Leclerc Drive Blagnac</span>
-
-                        <p>8 mois - Temps partiel</p>
-                        <p style="font-size: 1rem;">
-                            Première expérience professionnelle à travers un job étudiant durant ma formation en
-                            <a href="">BUT Informatique</a>.
-                        </p>
+                      <div class="contenu">
+                        <img src="Images/java.png" alt="Photo" class="photo" />
+                        <div class="titre">Java</div>
+                        <div class="corp">
+                          Langage orienté objet très utilisé.
+                        </div>
+                      </div>
                     </div>
+                    <div class="carte">
+                      <div class="contenu">
+                        <img src="Images/ts.png" alt="Photo" class="photo" />
+                        <div class="titre">TypeScript</div>
+                        <div class="corp">
+                          Extension de JavaScript avec typage statique.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carte">
+                      <div class="contenu">
+                        <img src="Images/react.png" alt="Photo" class="photo" />
+                        <div class="titre">React</div>
+                        <div class="corp">
+                          Bibliothèque JavaScript pour interfaces dynamiques.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+
+                <!-- BDD -->
+                <div class="comp-vert">
+                  <h6 class="categ">
+                    <strong>Gestion de base de données</strong>
+                  </h6>
+                  <div class="grid">
+                    <div class="carte">
+                      <div class="contenu">
+                        <div class="titre">SQL</div>
+                        <div class="corp">
+                          Langage pour bases de données relationnelles.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carte">
+                      <div class="contenu">
+                        <img
+                          src="Images/sqlDev.png"
+                          alt="Photo"
+                          class="photo"
+                        />
+                        <div class="titre">SQL Developer</div>
+                        <div class="corp">Outil de gestion SQL d’Oracle.</div>
+                      </div>
+                    </div>
+                    <div class="carte">
+                      <div class="contenu">
+                        <img src="Images/sql.png" alt="Photo" class="photo" />
+                        <div class="titre">MySQL</div>
+
+                        <div class="corp">
+                          Système de gestion de bases relationnelles.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carte">
+                      <div class="contenu">
+                        <img src="Images/nosql.png" alt="Photo" class="photo" />
+                        <div class="titre">NoSQL</div>
+
+                        <div class="corp">
+                          Bases de données non relationnelles, plus flexibles.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Gestion de projet  -->
+                <div class="comp-jaune">
+                  <h6 class="categ"><strong>Gestion de projets</strong></h6>
+
+                  <div class="grid">
+                    <div class="carte">
+                      <div
+                        class="contenu"
+                        alt="Diagramme pour planifier les projets."
+                      >
+                        <!-- Diagramme pour planifier les projets. -->
+                        <img src="Images/gantt.png" alt="" class="photo" />
+                        <div class="titre">Gantt</div>
+
+                        <div class="corp">
+                          Diagramme pour planifier les projets
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carte">
+                      <div class="contenu">
+                        <div class="titre">Workflow</div>
+
+                        <div class="corp">
+                          Organisation des tâches en étapes.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- travail d'equipe -->
+                <div class="comp-violet">
+                  <h6 class="categ"><strong>Travail d'équipe</strong></h6>
+                  <div class="grid">
+                    <div class="carte">
+                      <div class="contenu">
+                        <div class="titre">AGILE</div>
+                        <div class="corp">
+                          Méthodes agiles pour la gestion de projet en équipe.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carte">
+                      <div class="contenu">
+                        <img
+                          src="Images/github.png"
+                          alt="Photo"
+                          class="photo"
+                        />
+                        <div class="titre">Github</div>
+                        <div class="corp">
+                          Plateforme de gestion de code collaboratif.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <br />
+              </div>
             </div>
-            <br>
-        </div>
-        <hr style="margin: 2%; ">
-        <div class="borderCorp">
-            <!-- contact  -->
-            <div class="page fade-in">
-                <div class="espace_page">
-                    <span id="contact"></span>
-                    <span class="titre">
-                        Me contacter
-                    </span>
+            <div class="col-6">
+              <div class="espace_page">
+                <span class="titre">Mes projets</span>
+                <br /><br />
+                <div class="accordion" id="accordionProjet">
+                  <!-- <div class="accordion" id="accordionProjet" style="max-height: 318px ; overflow-y: auto; width: 100%; "> -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseP3"
+                        aria-expanded="false"
+                        aria-controls=""
+                      >
+                        <h5 style="margin: 0">
+                          <strong>Site d'évaluation de bieres</strong> - Mai
+                          2025
+                        </h5>
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseP3"
+                      class="accordion-collapse collapse"
+                      data-bs-parent=""
+                    >
+                      <div class="accordion-body">
+                        <span class="projetPerso">Projet personnel</span>
+                        <span class="projetSolo">Seul</span>
+                        <br /><br />
+                        L'objectif de ce site est de permettre la
+                        <span style="color: red">classification de bieres</span>
+                        en fonction des notes attribuées par les utilisateurs.
+                        <br />
 
-                    <br><br>
-                    <div class="email"> &nbsp; <strong>Email : </strong> &nbsp; alexis.christaud@gmail.com &nbsp; </div>
-                    <div class="email">
+                        Ce site est à destination d'un cercle fermé de
+                        personnes, mais il résulte des compétences développées
+                        sur le
+                        <span style="color: red">projet Angular de 2024</span>
+                        que j’ai continué à explorer.
 
-                        &nbsp; <strong>Linkedin :</strong>
-                        &nbsp; <a class="lienContact"
-                            href="https://www.linkedin.com/in/alexis-christaud-braize-4a7a0827b">Alexis
-                            Christaud-Braize</a>
-                        &nbsp;
-                    </div>
-                    <div class="email">
-                        &nbsp; <strong>Github : </strong>
-                        &nbsp; <a class="lienContact" href="https://github.com/Setsuna-san">Setsuna-san</a>
-                        &nbsp;
-                    </div>
-                    <div class="email">
-                        &nbsp; <strong>Discord :</strong>
-                        &nbsp; <a class="lienContact" href="https://discord.com/users/458357472969752608">setsuna_san</a>
-                        &nbsp;
-                    </div>
+                        <br /><br />
+                        Les technologies utilisées sont
+                        <strong>Angular</strong> pour l'interface et
+                        <strong>Firebase</strong>
+                        (firestore) pour l'hébergement du site et des données
+                        <br /><br />
+                        En développement depuis mai 2025, il est toujours mis à
+                        jour de manière récurrente.
+                        <br />
 
-                    <br>
-
-
-                    <div class="cv-download">
-                        <a href="cv.pdf" download="cv.pdf" class="btn btn-primary cv-download">
-                            Télécharger mon CV
+                        <a
+                          title="Voir l'aperçu"
+                          href="https://les-pelatiens.web.app/accueil"
+                          rel="noopener"
+                          target="_blank"
+                          class="btn btn-info rounded-2 p-2 m-2"
+                        >
+                          Aperçu du projet
                         </a>
+                        <div>Compétences :</div>
+                        <div class="gridCompetence">
+                          <div class="carteCompetence" data-target="#collapse2">
+                            <div class="contenu">TypeScript</div>
+                          </div>
+                          <div class="carteCompetence" data-target="#collapse1">
+                            <div class="contenu">HTML</div>
+                          </div>
+                          <div class="carteCompetence" data-target="#collapse1">
+                            <div class="contenu">CSS</div>
+                          </div>
+                          <div class="carteCompetence" data-target="#collapse5">
+                            <div class="contenu">Github</div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <br>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseP1"
+                        aria-expanded="false"
+                        aria-controls=""
+                      >
+                        <h5 style="margin: 0">
+                          <strong>Application Angular</strong> - Fév. 2024
+                        </h5>
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseP1"
+                      class="accordion-collapse collapse"
+                      data-bs-parent=""
+                    >
+                      <div class="accordion-body">
+                        <span class="projetUniv">Projet universitaire</span>
+                        <span class="projetSolo">Seul</span>
+                        <br /><br />
+                        Découvrir, comprendre puis réaliser une application web
+                        monopage utilisant une API REST.
+                        <br />
+                        <a
+                          title="Voir l'aperçu"
+                          href="fitness.html"
+                          target="_blank"
+                          class="btn btn-info rounded-2 p-2 m-2"
+                        >
+                          Aperçu du projet
+                        </a>
+                        <div>Compétences :</div>
+                        <div class="gridCompetence">
+                          <div class="carteCompetence" data-target="#collapse2">
+                            <div class="contenu">TypeScript</div>
+                          </div>
+                          <div class="carteCompetence" data-target="#collapse1">
+                            <div class="contenu">HTML</div>
+                          </div>
+                          <div class="carteCompetence" data-target="#collapse1">
+                            <div class="contenu">CSS</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseP2"
+                        aria-expanded="false"
+                        aria-controls=""
+                      >
+                        <h5 style="margin: 0">
+                          <strong>Site de e-commerce</strong> - Déc. 2023
+                        </h5>
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseP2"
+                      class="accordion-collapse collapse"
+                      data-bs-parent=""
+                    >
+                      <div class="accordion-body">
+                        <span class="projetUniv">Projet universitaire</span>
+                        <span class="projetEquipe">En équipe</span>
+                        <br /><br />
+
+                        Développement d'un site web dynamique en PHP pour le
+                        E-commerce et d'une interface de gestion des stocks en
+                        JavaFX. <br />
+
+                        <i class="btn text-light-emphasis"
+                          >Aucun apercu de projet</i
+                        >
+
+                        <div>Compétences :</div>
+                        <div class="gridCompetence">
+                          <div class="carteCompetence" data-target="#collapse1">
+                            <div class="contenu">PHP</div>
+                          </div>
+                          <div class="carteCompetence" data-target="#collapse1">
+                            <div class="contenu">HTML</div>
+                          </div>
+                          <div class="carteCompetence" data-target="#collapse1">
+                            <div class="contenu">CSS</div>
+                          </div>
+                          <div class="carteCompetence" data-target="#collapse2">
+                            <div class="contenu">Java</div>
+                          </div>
+                          <div class="carteCompetence" data-target="#collapse2">
+                            <div class="contenu">Python</div>
+                          </div>
+                          <div class="carteCompetence" data-target="#collapse3">
+                            <div class="contenu">MySQL</div>
+                          </div>
+                          <div class="carteCompetence" data-target="#collapse5">
+                            <div class="contenu">Github</div>
+                          </div>
+                          <div class="carteCompetence" data-target="#collapse5">
+                            <div class="contenu">AGILE</div>
+                          </div>
+                          <div class="carteCompetence" data-target="#collapse4">
+                            <div class="contenu">Workflow</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
+              <br />
             </div>
+          </div>
         </div>
-    </div>
+      </div>
+      <hr style="margin: 2%" />
+
+      <div class="borderCorp">
+        <!-- mes projets -->
+        <div class="page fade-in">
+          <div class="espace_page">
+            <span id="experiences"></span>
+            <span class="titre">Mes expériences</span>
+            <br />
+            <br />
+            <!-- stage GHT9 -->
+            <div class="carte">
+              <span style="color: rgb(91, 91, 91); font-size: 1.4rem"
+                ><strong
+                  ><b style="color: rgb(9, 159, 157); font-size: 1.6rem"
+                    >Mars - Juin 2025 &nbsp;</b
+                  >
+                </strong>
+                Stage au poste de développeur PHP - GHT9</span
+              >
+              <p>14 semaines</p>
+
+              <p style="font-size: 1rem">
+                Stage de 14 semaines chez
+                <b>
+                  <a
+                    title="Voir le site - GHT9"
+                    rel="noopener"
+                    target="_blank"
+                    href="https://www.ght9.fr/"
+                    >GHT9</a
+                  > </b
+                >, consacré au développement d’une application pour
+                l’association
+                <a href="https://sijavaissu.org/">Si j’avais su</a>. Réalisation
+                de bases de données, d’interfaces et de scripts avec
+                <b>FileMaker</b>, en collaboration à distance avec une équipe
+                internationale.
+              </p>
+            </div>
+            <br />
+            <!-- stage olsen -->
+            <div class="carte">
+              <span style="color: rgb(91, 91, 91); font-size: 1.4rem"
+                ><strong
+                  ><b style="color: rgb(9, 159, 157); font-size: 1.6rem"
+                    >Février - Avril 2024 &nbsp;</b
+                  > </strong
+                >Stage au poste de Développeur FileMaker - Olsen Conseil</span
+              >
+
+              <p>8 semaines (Distanciel)</p>
+              <p style="font-size: 1rem">
+                Stage de 8 semaines chez
+                <b
+                  ><a
+                    title="Voir le site - Olsen conseil"
+                    rel="noopener"
+                    target="_blank"
+                    href="https://www.olsenagile.com/"
+                    >Olsen Conseil</a
+                  ></b
+                >, consacré au développement d’une application pour
+                l’association
+                <a
+                  title="Voir le site - Si j'avais su"
+                  rel="noopener"
+                  target="_blank"
+                  href="https://sijavaissu.org/"
+                  >Si j’avais su</a
+                >. Réalisation de bases de données, d’interfaces et de scripts
+                avec <b>FileMaker</b>, en collaboration à distance avec une
+                équipe internationale.
+              </p>
+            </div>
+            <br />
+            <!-- stage olsen -->
+            <div class="carte">
+              <span style="color: rgb(91, 91, 91); font-size: 1.4rem"
+                ><strong
+                  ><b style="color: rgb(9, 159, 157); font-size: 1.6rem"
+                    >Mai 2023 - Février 2024 &nbsp;</b
+                  > </strong
+                >Préparateur de commandes - E.Leclerc Drive Blagnac</span
+              >
+
+              <p>8 mois - Temps partiel</p>
+              <p style="font-size: 1rem">
+                Première expérience professionnelle à travers un job étudiant
+                durant ma formation en
+                <a href="">BUT Informatique</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+        <br />
+      </div>
+      <hr style="margin: 2%" />
+      <div class="borderCorp">
+        <!-- contact  -->
+        <div class="page fade-in">
+          <div class="espace_page">
+            <span id="contact"></span>
+            <span class="titre"> Me contacter </span>
+
+            <br /><br />
+            <div class="email">
+              &nbsp; <strong>Email : </strong> &nbsp; alexis.christaud@gmail.com
+              &nbsp;
+            </div>
+            <div class="email">
+              &nbsp; <strong>Linkedin :</strong> &nbsp;
+              <a
+                class="lienContact"
+                href="https://www.linkedin.com/in/alexis-christaud-braize-4a7a0827b"
+                >Alexis Christaud-Braize</a
+              >
+              &nbsp;
+            </div>
+            <div class="email">
+              &nbsp; <strong>Github : </strong> &nbsp;
+              <a class="lienContact" href="https://github.com/Setsuna-san"
+                >Setsuna-san</a
+              >
+              &nbsp;
+            </div>
+            <div class="email">
+              &nbsp; <strong>Discord :</strong> &nbsp;
+              <a
+                class="lienContact"
+                href="https://discord.com/users/458357472969752608"
+                >setsuna_san</a
+              >
+              &nbsp;
+            </div>
+
+            <br />
+
+            <div class="cv-download">
+              <a
+                href="cv.pdf"
+                download="cv.pdf"
+                class="btn btn-primary cv-download"
+              >
+                Télécharger mon CV
+              </a>
+            </div>
+            <br />
+          </div>
+        </div>
+      </div>
     </div>
     <script src="JS/fade.js"></script>
     <script src="JS/slideshow.js"></script>
     <script src="JS/navActive.js"></script>
     <script>
-        // Décalage global pour tous les ancres #
-        const offset = 200; // Ajuste selon la hauteur de ton menu
+      // Décalage global pour tous les ancres #
+      const offset = 200; // Ajuste selon la hauteur de ton menu
 
-        function scrollWithOffset(id) {
-            const element = document.querySelector(id);
-            if (element) {
-                const elementPosition = element.getBoundingClientRect().top + window.scrollY;
-                const offsetPosition = elementPosition - offset;
+      function scrollWithOffset(id) {
+        const element = document.querySelector(id);
+        if (element) {
+          const elementPosition =
+            element.getBoundingClientRect().top + window.scrollY;
+          const offsetPosition = elementPosition - offset;
 
-                window.scrollTo({
-                    top: offsetPosition,
-                    behavior: 'smooth'
-                });
-            }
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth",
+          });
         }
+      }
 
-        // Gestion des clics sur tous les liens #
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                const target = this.getAttribute('href');
-                if (target && target !== "#") {
-                    e.preventDefault(); // Bloque le scroll natif
-                    scrollWithOffset(target);
-                }
-            });
+      // Gestion des clics sur tous les liens #
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          const target = this.getAttribute("href");
+          if (target && target !== "#") {
+            e.preventDefault(); // Bloque le scroll natif
+            scrollWithOffset(target);
+          }
         });
+      });
 
-        // Gestion si on arrive avec un hash dans l’URL (redirection externe ou reload avec #)
-        window.addEventListener('load', function () {
-            if (window.location.hash) {
-                scrollWithOffset(window.location.hash);
+      // Gestion si on arrive avec un hash dans l’URL (redirection externe ou reload avec #)
+      window.addEventListener("load", function () {
+        if (window.location.hash) {
+          scrollWithOffset(window.location.hash);
+        }
+      });
+
+      // redirection de projet -> conpetences
+      document.querySelectorAll(".carteCompetence").forEach((card) => {
+        card.addEventListener("click", function () {
+          const target = this.getAttribute("data-target"); // Récupère l'ID de la section accordéon à ouvrir
+          if (target) {
+            const element = document.querySelector(target); // Trouve l'élément accordéon
+
+            if (element) {
+              // Ferme toutes les sections ouvertes
+              document
+                .querySelectorAll(".accordion-collapse.show")
+                .forEach((openItem) => {
+                  openItem.classList.remove("show");
+                });
+
+              // Ouvre la bonne section
+              element.classList.add("show");
+
+              // Décalage pour éviter d'être caché sous un menu fixe
+              const offset = 200; // Ajuste cette valeur selon la hauteur de ton menu
+              const elementPosition =
+                element.getBoundingClientRect().top + window.scrollY;
+              const offsetPosition = elementPosition - offset;
+
+              // Fait défiler avec ajustement
+              window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth",
+              });
             }
+          }
         });
-
-
-        // redirection de projet -> conpetences
-        document.querySelectorAll('.carteCompetence').forEach(card => {
-            card.addEventListener('click', function () {
-                const target = this.getAttribute('data-target'); // Récupère l'ID de la section accordéon à ouvrir
-                if (target) {
-                    const element = document.querySelector(target); // Trouve l'élément accordéon
-
-                    if (element) {
-                        // Ferme toutes les sections ouvertes
-                        document.querySelectorAll('.accordion-collapse.show').forEach(openItem => {
-                            openItem.classList.remove('show');
-                        });
-
-                        // Ouvre la bonne section
-                        element.classList.add('show');
-
-                        // Décalage pour éviter d'être caché sous un menu fixe
-                        const offset = 200; // Ajuste cette valeur selon la hauteur de ton menu
-                        const elementPosition = element.getBoundingClientRect().top + window.scrollY;
-                        const offsetPosition = elementPosition - offset;
-
-                        // Fait défiler avec ajustement
-                        window.scrollTo({
-                            top: offsetPosition,
-                            behavior: 'smooth'
-                        });
-                    }
-                }
-            });
-        });
-
-
-
+      });
     </script>
     <!-- bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-
-
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
