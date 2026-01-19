@@ -77,9 +77,6 @@
               <a class="nav-link" href="#projets">Projets & compétences</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#experiences">Mes expériences</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="#contact">Me contacter</a>
             </li>
             <li class="nav-item drop">
@@ -129,32 +126,16 @@
     <!-- cadre de début -->
     <div class="blockSpawn no-select">
       <div class="spawn">
+        <div class="profilePicture">
+          <img src="Images/profile.jpg" alt="">
+        </div>
         <div>
-          Bienvenue sur le portfolio de
-          <strong> Alexis Christaud-Braize</strong>
+          Bienvenue sur le portfolio de <br>
+          <strong style="font-size: 100px;"> Alexis Christaud-Braize</strong>
           <br />
         </div>
       </div>
 
-      <div
-        style="
-          background-color: #343a34;
-          border: 4px solid black;
-          position: absolute;
-          transform: translateY(20vh);
-          color: black;
-          font-weight: 900;
-          font-size: 1.8rem;
-        "
-      >
-        <div
-          style="background-color: wheat; width: max-content; padding: 5px 13px"
-        >
-          <i class="fa-solid fa-triangle-exclamation"></i>
-          Site toujours en construction
-          <i class="fa-solid fa-triangle-exclamation"></i>
-        </div>
-      </div>
     </div>
 
     <br /><br />
@@ -222,11 +203,10 @@
 
       <hr style="margin: 2%" />
 
-      <div class="borderCorp">
-        <!-- qui -->
+      <div class="borderCorp" >
 
         <!-- mon parcours -->
-        <div class="page fade-in">
+        <div class="page fade-in" id="parcours">
           <div class="espace_page">
             <span class="titre">Mon parcours</span>
 
@@ -235,72 +215,20 @@
             <div class="timeline">
               <!-- 2025 -->
               <div class="timeline-item">
-                <span class="date">Mai 2025</span>
+                <span class="date">BAC +3 </span>
                 <div class="content">
-                  <h3>Obtention du BUT Informatique – IUT de Blagnac</h3>
+                  <h3> BUT informatique de Blagnac - Réalisation d’applications: conception, développement, validation </h3>
+                  <p>Sept. 2022 - Mai 2025</p>
                 </div>
               </div>
 
-              <div class="timeline-item timeline-indent">
-                <span class="date">Mars - Avril 2025</span>
-                <div class="content">
-                  <h3>Stagiaire développeur PHP – GHT9</h3>
-                  <a href="https://www.ght9.fr/" target="_blank" rel="noopener"
-                    >https://www.ght9.fr/</a
-                  >
-                </div>
-              </div>
-
-              <!-- 2024 -->
-              <div class="timeline-item timeline-indent">
-                <span class="date">Fév – Avr 2024</span>
-                <div class="content">
-                  <h3>Stagiaire – Olsen Conseil</h3>
-                  Stage de 8 semaines chez
-                  <b
-                    ><a
-                      title="Voir le site - Olsen conseil"
-                      rel="noopener"
-                      target="_blank"
-                      href="https://www.olsenagile.com/"
-                      >Olsen Conseil</a
-                    ></b
-                  >, consacré au développement d’une application pour
-                  l’association
-                  <a
-                    title="Voir le site - Si j'avais su"
-                    rel="noopener"
-                    target="_blank"
-                    href="https://sijavaissu.org/"
-                    >Si j’avais su</a
-                  >. Réalisation de bases de données, d’interfaces et de scripts
-                  avec <b>FileMaker</b>, en collaboration à distance avec une
-                  équipe internationale.
-                </div>
-              </div>
-
-              <div class="timeline-item timeline-indent">
-                <span class="date">Mai 2023 – Fév 2024</span>
-                <div class="content">
-                  <h3>Préparateur de commandes – Drive E.Leclerc Blagnac</h3>
-                  <p>Emploi à mi-temps</p>
-                </div>
-              </div>
-
-              <!-- 2022 - 2025 -->
-              <div class="timeline-item">
-                <span class="date">Sept. 2022</span>
-                <div class="content">
-                  <h3>Début du BUT Informatique – IUT de Blagnac</h3>
-                </div>
-              </div>
 
               <!-- 2022 -->
               <div class="timeline-item">
-                <span class="date">2019 - 2022</span>
+                <span class="date">BAC</span>
                 <div class="content">
-                  <h3>Baccalauréat Technologique STI2D</h3>
-                  <p>Option Systèmes d’Information et Numérique (SIN)</p>
+                  <h3>Bac Technologique STI2D - Systèmes d’Information et Numérique (SIN)</h3>
+                  <p>Sept. 2019 - Mai 2022</p>
                 </div>
               </div>
             </div>
@@ -441,6 +369,19 @@
                     <div class="carte">
                       <div class="contenu">
                         <img
+                          src="Images/phpmyadmin.png"
+                          alt="Photo"
+                          class="photo"
+                        />
+                        <div class="titre">PHPMyAdmin</div>
+                        <div class="corp">
+                          Langage pour bases de données relationnelles.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carte">
+                      <div class="contenu">
+                        <img
                           src="Images/sqlDev.png"
                           alt="Photo"
                           class="photo"
@@ -461,7 +402,6 @@
                     </div>
                     <div class="carte">
                       <div class="contenu">
-                        <img src="Images/nosql.png" alt="Photo" class="photo" />
                         <div class="titre">NoSQL</div>
 
                         <div class="corp">
@@ -474,7 +414,9 @@
 
                 <!-- Gestion de projet  -->
                 <div class="comp-jaune">
-                  <h6 class="categ"><strong>Gestion de projets</strong></h6>
+                  <h6 class="categ">
+                    <strong>Gestion de projets et travail d'équipe</strong>
+                  </h6>
 
                   <div class="grid">
                     <div class="carte">
@@ -500,13 +442,6 @@
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-
-                <!-- travail d'equipe -->
-                <div class="comp-violet">
-                  <h6 class="categ"><strong>Travail d'équipe</strong></h6>
-                  <div class="grid">
                     <div class="carte">
                       <div class="contenu">
                         <div class="titre">AGILE</div>
@@ -515,6 +450,13 @@
                         </div>
                       </div>
                     </div>
+                  </div>
+                </div>
+
+                <!-- travail d'equipe -->
+                <div class="comp-violet">
+                  <h6 class="categ"><strong>Outils</strong></h6>
+                  <div class="grid">
                     <div class="carte">
                       <div class="contenu">
                         <img
@@ -525,6 +467,67 @@
                         <div class="titre">Github</div>
                         <div class="corp">
                           Plateforme de gestion de code collaboratif.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carte">
+                      <div class="contenu">
+                        <img
+                          src="Images/vscode.png"
+                          alt="Photo"
+                          class="photo"
+                        />
+                        <div class="titre">Visual studio code</div>
+                        <div class="corp">
+                          Editeur de code pour développement web et logiciel.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carte">
+                      <div class="contenu">
+                        <img
+                          src="Images/postman.png"
+                          alt="Photo"
+                          class="photo"
+                        />
+                        <div class="titre">PostMan</div>
+                        <div class="corp">
+                          Plateforme de test et documentation d'API.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carte">
+                      <div class="contenu">
+                        <img
+                          src="Images/filemaker.png"
+                          alt="Photo"
+                          class="photo"
+                        />
+                        <div class="titre">FileMaker</div>
+                        <div class="corp">
+                          Plateforme de développement de bases de données.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carte">
+                      <div class="contenu">
+                        <img
+                          src="Images/eclipse.png"
+                          alt="Photo"
+                          class="photo"
+                        />
+                        <div class="titre">Eclipse</div>
+                        <div class="corp">
+                          Environnement de développement intégré (IDE) Java.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carte">
+                      <div class="contenu">
+                        <img src="Images/unity.png" alt="Photo" class="photo" />
+                        <div class="titre">Unity</div>
+                        <div class="corp">
+                          Moteur de jeu pour développement de jeux 2D/3D.
                         </div>
                       </div>
                     </div>
@@ -732,108 +735,149 @@
                   </div>
                 </div>
               </div>
+
               <br />
+
+              <div class="espace_page">
+                <span id="experiences"></span>
+                <span class="titre">Mes expériences pro</span>
+                <br />
+
+                <!-- GHT9 -->
+                <div class="accordion" id="accordionProjet">
+                  <!-- <div class="accordion" id="accordionProjet" style="max-height: 318px ; overflow-y: auto; width: 100%; "> -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseE1"
+                        aria-expanded="false"
+                        aria-controls=""
+                      >
+                        <h5 style="margin: 0">
+                          <strong>Stage développeur PHP - GHT9</strong> - Mars -
+                          Juin 2025
+                        </h5>
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseE1"
+                      class="accordion-collapse collapse"
+                      data-bs-parent=""
+                    >
+                      <div class="accordion-body">
+                        Stage de 14 semaines chez
+                        <b>
+                          <a
+                            title="Voir le site - GHT9"
+                            rel="noopener"
+                            target="_blank"
+                            href="https://www.ght9.fr/"
+                            >GHT9</a
+                          > </b
+                        >, consacré au développement d’une application interne
+                        lier aux 3 sites vitrines Wordpress. <br /><br />
+                        Réalisation de bases de données, d’interfaces et de
+                        scripts avec <b>PHP, HTML et PHPmyAdmin</b>, en
+                        collaboration avec 2 développeurs.
+                        <br />
+                        <br />
+
+                        <h5>Compétences :</h5>
+                        <div class="gridCompetence">
+                          <div class="carteCompetence">
+                            <div class="contenu">Github</div>
+                          </div>
+                          <div class="carteCompetence">
+                            <div class="contenu">PHP</div>
+                          </div>
+                          <div class="carteCompetence">
+                            <div class="contenu">HTML</div>
+                          </div>
+                          <div class="carteCompetence">
+                            <div class="contenu">CSS</div>
+                          </div>
+                          <div class="carteCompetence">
+                            <div class="contenu">PHPmyAdmin</div>
+                          </div>
+                          <div class="carteCompetence">
+                            <div class="contenu">API</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Olsen conseil -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseE2"
+                        aria-expanded="false"
+                        aria-controls=""
+                      >
+                        <h5 style="margin: 0">
+                          <strong>
+                            Stage développeur FileMaker - Olsen Conseil
+                          </strong>
+                          - Fév. - Avr. 2024
+                        </h5>
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseE2"
+                      class="accordion-collapse collapse"
+                      data-bs-parent=""
+                    >
+                      <div class="accordion-body">
+                        Stage de 8 semaines chez
+                        <b
+                          ><a
+                            title="Voir le site - Olsen conseil"
+                            rel="noopener"
+                            target="_blank"
+                            href="https://www.olsenagile.com/"
+                            >Olsen Conseil</a
+                          ></b
+                        >, consacré au développement d’une application pour
+                        l’association
+                        <a
+                          title="Voir le site - Si j'avais su"
+                          rel="noopener"
+                          target="_blank"
+                          href="https://sijavaissu.org/"
+                          >Si j’avais su</a
+                        >. Réalisation de bases de données, d’interfaces et de
+                        scripts avec <b>FileMaker</b>, en collaboration à
+                        distance avec une équipe internationale.
+                        <br />
+                        <br />
+
+                        <h5>Compétences :</h5>
+                        <div class="gridCompetence">
+                          <div class="carteCompetence">
+                            <div class="contenu">Filemaker</div>
+                          </div>
+                          <div class="carteCompetence">
+                            <div class="contenu">SQL</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br />
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <hr style="margin: 2%" />
-
-      <div class="borderCorp">
-        <!-- mes projets -->
-        <div class="page fade-in">
-          <div class="espace_page">
-            <span id="experiences"></span>
-            <span class="titre">Mes expériences</span>
-            <br />
-            <br />
-            <!-- stage GHT9 -->
-            <div class="carte">
-              <span style="color: rgb(91, 91, 91); font-size: 1.4rem"
-                ><strong
-                  ><b style="color: rgb(9, 159, 157); font-size: 1.6rem"
-                    >Mars - Juin 2025 &nbsp;</b
-                  >
-                </strong>
-                Stage au poste de développeur PHP - GHT9</span
-              >
-              <p>14 semaines</p>
-
-              <p style="font-size: 1rem">
-                Stage de 14 semaines chez
-                <b>
-                  <a
-                    title="Voir le site - GHT9"
-                    rel="noopener"
-                    target="_blank"
-                    href="https://www.ght9.fr/"
-                    >GHT9</a
-                  > </b
-                >, consacré au développement d’une application pour
-                l’association
-                <a href="https://sijavaissu.org/">Si j’avais su</a>. Réalisation
-                de bases de données, d’interfaces et de scripts avec
-                <b>FileMaker</b>, en collaboration à distance avec une équipe
-                internationale.
-              </p>
-            </div>
-            <br />
-            <!-- stage olsen -->
-            <div class="carte">
-              <span style="color: rgb(91, 91, 91); font-size: 1.4rem"
-                ><strong
-                  ><b style="color: rgb(9, 159, 157); font-size: 1.6rem"
-                    >Février - Avril 2024 &nbsp;</b
-                  > </strong
-                >Stage au poste de Développeur FileMaker - Olsen Conseil</span
-              >
-
-              <p>8 semaines (Distanciel)</p>
-              <p style="font-size: 1rem">
-                Stage de 8 semaines chez
-                <b
-                  ><a
-                    title="Voir le site - Olsen conseil"
-                    rel="noopener"
-                    target="_blank"
-                    href="https://www.olsenagile.com/"
-                    >Olsen Conseil</a
-                  ></b
-                >, consacré au développement d’une application pour
-                l’association
-                <a
-                  title="Voir le site - Si j'avais su"
-                  rel="noopener"
-                  target="_blank"
-                  href="https://sijavaissu.org/"
-                  >Si j’avais su</a
-                >. Réalisation de bases de données, d’interfaces et de scripts
-                avec <b>FileMaker</b>, en collaboration à distance avec une
-                équipe internationale.
-              </p>
-            </div>
-            <br />
-            <!-- stage olsen -->
-            <div class="carte">
-              <span style="color: rgb(91, 91, 91); font-size: 1.4rem"
-                ><strong
-                  ><b style="color: rgb(9, 159, 157); font-size: 1.6rem"
-                    >Mai 2023 - Février 2024 &nbsp;</b
-                  > </strong
-                >Préparateur de commandes - E.Leclerc Drive Blagnac</span
-              >
-
-              <p>8 mois - Temps partiel</p>
-              <p style="font-size: 1rem">
-                Première expérience professionnelle à travers un job étudiant
-                durant ma formation en
-                <a href="">BUT Informatique</a>.
-              </p>
-            </div>
-          </div>
-        </div>
-        <br />
-      </div>
+      
       <hr style="margin: 2%" />
       <div class="borderCorp">
         <!-- contact  -->
