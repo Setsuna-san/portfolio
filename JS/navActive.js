@@ -1,23 +1,34 @@
 // Sélection de tous les liens de navigation
 const navLinks = document.querySelectorAll('.navbar-nav a.nav-link');
 
+// Variable pour suivre le lien actif actuel
+let currentActiveLink = null;
+
 // Création de l'observer
 const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        const id = entry.target.getAttribute('id');
-        const link = document.querySelector(`.navbar-nav a[href="#${id}"]`);
-
-        if (entry.isIntersecting) {
-            // Supprimer la classe "active" de tous les liens
-            navLinks.forEach(link => link.classList.remove('active'));
-            // Ajouter la classe "active" au lien correspondant
-            if (link) link.classList.add('active');
+    const intersecting = entries.filter(entry => entry.isIntersecting);
+    
+    if (intersecting.length > 0) {
+        // tri les balise par hauteur de haut en bas
+        intersecting.sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+        
+        // recupere la balise la plus haut affiché
+        const id = intersecting[0].target.getAttribute('id');
+        const newLink = document.querySelector(`.navbar-nav a[href="#${id}"]`);
+        
+        // si il est different de l'actuel on change
+        if (newLink && newLink !== currentActiveLink) {
+            if (currentActiveLink) currentActiveLink.classList.remove('active');
+            newLink.classList.add('active');
+            currentActiveLink = newLink;
         }
-    });
+    }
+    
 }, {
+    
     root: null, // viewport
     rootMargin: '0px',
-    threshold: 0.6 // 60% de la section visible pour être considérée "active"
+    threshold: 1 
 });
 
 // Observer chaque section ayant un ID correspondant à un lien
