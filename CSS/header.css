@@ -1,6 +1,6 @@
 
 .navbar {
-    width: 100%;
+    width: 100vw;
     user-select: none;
     position: fixed;
     z-index: 10;

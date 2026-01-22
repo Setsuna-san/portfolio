@@ -64,9 +64,12 @@
   display: flex;
   flex-direction: row; /* Dispose l'image et le corps sur la même ligne */
   align-items: flex-start; /* Aligne l'image et le texte en haut */
+  align-items: center;
+  height: 100%;
 }
 
 .carte .titre {
+  all: unset;
   border-radius: 15px;
   font-size: 20px;
   font-weight: 800;
@@ -91,7 +94,7 @@
   font-size: 1em;
   white-space: nowrap;
   opacity: 0;
-  pointer-events: none;  /* éviter les déclenchements intempestifs */
+  pointer-events: none; /* éviter les déclenchements intempestifs */
   transition: opacity 0.2s ease;
 }
 
@@ -151,7 +154,6 @@
   color: rgb(99, 218, 216);
 }
 
-
 .comp-rose {
   background-color: rgba(255, 182, 193, 0.3);
   padding: 1em;
@@ -161,7 +163,7 @@
 }
 
 .comp-rose .dada {
-  color:  rgb(176, 0, 26);
+  color: rgb(176, 0, 26);
 }
 
 .comp-vert {
@@ -173,9 +175,8 @@
 }
 
 .comp-vert .dada {
-  color:  rgb(10, 147, 0);
+  color: rgb(10, 147, 0);
 }
-
 
 .comp-bleu {
   background-color: rgba(161, 224, 255, 0.3);
@@ -186,7 +187,7 @@
 }
 
 .comp-bleu .dada {
-  color:  rgb(0, 126, 188);
+  color: rgb(0, 126, 188);
 }
 
 .comp-jaune {
@@ -198,9 +199,8 @@
 }
 
 .comp-jaune .dada {
-  color:  rgb(89, 89, 21);
+  color: rgb(89, 89, 21);
 }
-
 
 .comp-violet {
   background-color: rgba(238, 145, 238, 0.3);
@@ -211,5 +211,41 @@
 }
 
 .comp-violet .dada {
-  color:  rgb(134, 4, 129);
+  color: rgb(134, 4, 129);
+}
+
+.categ {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+@media (max-width: 700px) {
+  .carte {
+    font-size: 10px;
+  }
+
+  .carte .contenu .titre {
+    font-size: 10px;
+  }
+
+  .carte .photo {
+    max-height: 2.5em;
+  }
+
+  .categ strong {
+    font-size: 14px;
+  }
+
+  .grid {
+    gap: 5px;
+  }
+
+  .comp-rose,
+  .comp-vert,
+  .comp-bleu,
+  .comp-jaune,
+  .comp-violet {
+    padding: 0.5em;
+    margin: 0.5em;
+  }
 }

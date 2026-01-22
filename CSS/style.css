@@ -12,7 +12,6 @@ html {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-
 }
 
 body {
@@ -41,7 +40,6 @@ a:hover {
 
 .borderCorp {
   background-color: whitesmoke;
-
   border: 3px solid #343a3459;
 }
 
@@ -58,10 +56,6 @@ a:hover {
 
 .espace_page {
   font-size: 2rem;
-}
-
-.espace_page strong {
-  font-size: large;
 }
 
 .page::before {
@@ -132,15 +126,8 @@ a:hover {
   background-color: rgba(52, 58, 64, 0.9);
 }
 
-.spawn .profilePicture {
-  border: 5px solid white;
-  border-radius: 50%;
-}
-
-.spawn .profilePicture img {
-  border-radius: 50%;
-  width: 300px;
-  height: 60%;
+.spawn strong {
+  font-size: calc(20px + 5vw);
 }
 
 .blockSpawn {
@@ -151,7 +138,7 @@ a:hover {
 }
 
 .titre {
-  font-size: 2.5rem;
+  font-size: 2.5em;
   font-weight: bolder;
 }
 
@@ -252,7 +239,7 @@ h4 {
 .accordion-header,
 .accordion-button {
   background-color: transparent;
-  width: 35vw;
+  margin: 1%;
   color: rgb(0, 0, 0);
 }
 
@@ -362,4 +349,73 @@ body::-webkit-scrollbar {
 .cv-download:hover {
   color: rgb(120, 199, 3);
   transform: scale(101%);
+}
+
+.form-moi {
+  font-size: 1em;
+}
+
+@media (max-width: 500px) {
+  html {
+    background-image: none;
+    background-color: whitesmoke;
+  }
+
+  .titre {
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+
+  .spawn {
+    font-size: 15px;
+    width: 100%;
+    border-left: none;
+    border-right: none;
+    text-shadow: none;
+    color: black;
+    background-color: white;
+  }
+
+  .spawn strong {
+    font-size: calc(20px + 1vw);
+  }
+
+  .blockSpawn {
+    width: 100%;
+    margin-top: 30%;
+    height: fit-content;
+  }
+
+  .form-moi {
+    padding: 1em;
+  }
+
+  .timeline-item {
+    align-items: normal;
+    padding: 0;
+    padding-right: 0.5em;
+    height: 100%;
+  }
+
+  .timeline-item .date {
+    width: 20vw;
+    height: 100%;
+  }
+  .timeline-item .content h3 {
+    font-size: 14px;
+    letter-spacing: -0.5px;
+  }
+
+  .accordion-item h5 {
+    font-size: 13px;
+    letter-spacing: -0.5px;
+  }
+  .email {
+    letter-spacing: -0.5px;
+    font-size: 15px;
+  }
+  .cv-download {
+    text-align: center;
+  }
 }

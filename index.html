@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
@@ -120,22 +120,18 @@
       </div>
     </nav>
 
-    <div id="background">
-
-    </div>
-    
+    <div id="background"></div>
 
     <br id="spawn" />
     <!-- cadre de début -->
     <div class="blockSpawn no-select">
       <div class="spawn">
         <div>
-          Bienvenue sur le portfolio de <br>
-          <strong style="font-size: 100px;"> Alexis Christaud-Braize</strong>
+          Bienvenue sur le portfolio de <br />
+          <strong> Alexis Christaud-Braize</strong>
           <br />
         </div>
       </div>
-
     </div>
 
     <br /><br />
@@ -149,7 +145,7 @@
             <span id="moi"></span>
             <p class="titre">A propos de moi</p>
             <br />
-            <form action="" style="font-size: 1.3em">
+            <form action="" class="form-moi">
               <div
                 style="width: 100%; display: flex; gap: 2em; flex-wrap: wrap"
               >
@@ -203,37 +199,35 @@
 
       <hr style="margin: 2%" />
 
-      <div class="borderCorp" >
-
+      <div class="borderCorp">
         <!-- mon parcours -->
         <div class="page fade-in" id="parcours">
           <div class="espace_page">
-            <span class="titre">Mon parcours</span>
+            <p class="titre">Mon parcours</p>
 
-            <br />
-            <br />
             <div class="timeline">
               <!-- 2025 -->
               <div class="timeline-item">
                 <span class="date">BAC +3 </span>
                 <div class="content">
-                  <h3> BUT informatique de Blagnac - Réalisation d’applications: conception, développement, validation </h3>
+                  <h3>BUT informatique</h3>
+                  Parcours A : réalisation d’applications
                   <p>Sept. 2022 - Mai 2025</p>
                 </div>
               </div>
-
 
               <!-- 2022 -->
               <div class="timeline-item">
                 <span class="date">BAC</span>
                 <div class="content">
-                  <h3>Bac Technologique STI2D - Systèmes d’Information et Numérique (SIN)</h3>
+                  <h3>Bac Technologique STI2D</h3>
+                  Systèmes d’Information et Numérique (SIN)
                   <p>Sept. 2019 - Mai 2022</p>
                 </div>
               </div>
             </div>
           </div>
-          <br id="competences" />
+          <br />
         </div>
       </div>
 
@@ -241,18 +235,18 @@
 
       <div class="borderCorp">
         <!-- mes compétences -->
-        <div class="page fade-in">
+        <div class="page fade-in" id="competences" >
           <div class="row">
-            <div class="col-6">
+            <div class="col-lg-6 col-sm-12">
               <div class="espace_page">
                 <span id="projets"></span>
-                <span class="titre">Mes compétences</span>
-                <br /><br />
+                <p class="titre">Mes compétences</p>
+
                 <!-- Liste de déroulants -->
 
                 <!-- Dev web -->
                 <div class="comp-rose">
-                  <h6 class="categ"><strong>Développement web</strong></h6>
+                  <p class="categ"><strong>Développement web</strong></p>
                   <div class="grid">
                     <div class="carte">
                       <div class="contenu">
@@ -295,9 +289,9 @@
 
                 <!-- dev app  -->
                 <div class="comp-bleu">
-                  <h6 class="categ">
+                  <p class="categ">
                     <strong>Développement d'applications</strong>
-                  </h6>
+                  </p>
                   <div class="grid">
                     <div class="carte">
                       <div class="contenu">
@@ -354,9 +348,9 @@
 
                 <!-- BDD -->
                 <div class="comp-vert">
-                  <h6 class="categ">
+                  <p class="categ">
                     <strong>Gestion de base de données</strong>
-                  </h6>
+                  </p>
                   <div class="grid">
                     <div class="carte">
                       <div class="contenu">
@@ -414,9 +408,9 @@
 
                 <!-- Gestion de projet  -->
                 <div class="comp-jaune">
-                  <h6 class="categ">
+                  <p class="categ">
                     <strong>Gestion de projets et travail d'équipe</strong>
-                  </h6>
+                  </p>
 
                   <div class="grid">
                     <div class="carte">
@@ -455,7 +449,7 @@
 
                 <!-- travail d'equipe -->
                 <div class="comp-violet">
-                  <h6 class="categ"><strong>Outils</strong></h6>
+                  <p class="categ"><strong>Outils</strong></p>
                   <div class="grid">
                     <div class="carte">
                       <div class="contenu">
@@ -537,10 +531,9 @@
                 <br />
               </div>
             </div>
-            <div class="col-6">
+            <div class="col-lg-6 col-sm-12">
               <div class="espace_page">
-                <span class="titre">Mes projets</span>
-                <br /><br />
+                <p class="titre">Mes projets</p>
                 <div class="accordion" id="accordionProjet">
                   <!-- <div class="accordion" id="accordionProjet" style="max-height: 318px ; overflow-y: auto; width: 100%; "> -->
                   <div class="accordion-item">
@@ -554,7 +547,7 @@
                         aria-controls=""
                       >
                         <h5 style="margin: 0">
-                          <strong>Site d'évaluation de bieres</strong> - Mai
+                          <strong>Site d'évaluation de bieres</strong> <br> Mai
                           2025
                         </h5>
                       </button>
@@ -628,7 +621,7 @@
                         aria-controls=""
                       >
                         <h5 style="margin: 0">
-                          <strong>Application Angular</strong> - Fév. 2024
+                          <strong>Application Angular</strong>  <br> Fév. 2024
                         </h5>
                       </button>
                     </h2>
@@ -678,7 +671,7 @@
                         aria-controls=""
                       >
                         <h5 style="margin: 0">
-                          <strong>Site de e-commerce</strong> - Déc. 2023
+                          <strong>Site de e-commerce</strong> <br> Déc. 2023
                         </h5>
                       </button>
                     </h2>
@@ -740,8 +733,7 @@
 
               <div class="espace_page">
                 <span id="experiences"></span>
-                <span class="titre">Mes expériences pro</span>
-                <br />
+                <p class="titre">Mes expériences</p>
 
                 <!-- GHT9 -->
                 <div class="accordion" id="accordionProjet">
@@ -757,8 +749,8 @@
                         aria-controls=""
                       >
                         <h5 style="margin: 0">
-                          <strong>Stage développeur PHP - GHT9</strong> - Mars -
-                          Juin 2025
+                          <strong>Stage développeur PHP - GHT9</strong> <br />
+                          Mars - Juin 2025
                         </h5>
                       </button>
                     </h2>
@@ -825,7 +817,8 @@
                           <strong>
                             Stage développeur FileMaker - Olsen Conseil
                           </strong>
-                          - Fév. - Avr. 2024
+                          <br />
+                          Fév. - Avr. 2024
                         </h5>
                       </button>
                     </h2>
@@ -877,16 +870,15 @@
           </div>
         </div>
       </div>
-      
+
       <hr style="margin: 2%" />
       <div class="borderCorp">
         <!-- contact  -->
         <div class="page fade-in">
           <div class="espace_page">
             <span id="contact"></span>
-            <span class="titre"> Me contacter </span>
+            <p class="titre">Me contacter</p>
 
-            <br /><br />
             <div class="email">
               &nbsp; <strong>Email : </strong> &nbsp; alexis.christaud@gmail.com
               &nbsp;
